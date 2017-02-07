@@ -72,7 +72,7 @@ paths:
   /tercero:
     get:
       tags:
-      - "Tercero"
+      - "BuscarTercero"
       summary: "Tercero"
       description: "Busca un tercero a través de un tipo y número de documento de\
         \ identidad.\n"
@@ -142,6 +142,11 @@ definitions:
         type: "array"
         items:
           $ref: "#/definitions/ObjectoAsegurado"
+    example:
+      ideacuerdo: ""
+      fecinivig: "01/01/2018"
+      ur:
+        tipo: "vehiculo"
   ObjectoAsegurado:
     type: "object"
     properties:
