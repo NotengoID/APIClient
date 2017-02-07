@@ -225,8 +225,8 @@ definitions:
       message:
         type: "string"
     example:
-      code: 202
-      message: "Error"
+      code: 404
+      message: "No encontrado"
   Vehiculo_VEHICULO_SUNARP:
     properties:
       tipoAltoRiesgo:
