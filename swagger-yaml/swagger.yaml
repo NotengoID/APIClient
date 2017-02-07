@@ -25,9 +25,10 @@ paths:
       parameters:
       - name: "Authorization"
         in: "header"
-        description: "Token para acceder a los servicios de Rimac."
+        description: "Token de acceso."
         required: true
         type: "string"
+        default: "Beared TestNoToken"
       - in: "body"
         name: "body"
         description: "datos de la cotización."
@@ -48,14 +49,15 @@ paths:
     put:
       tags:
       - "Acuerdo"
-      summary: "Vehículos"
+      summary: "Acuerdo"
       description: "Actualización de un acuerdo\n"
       parameters:
       - name: "ideacuerdo"
         in: "header"
-        description: "Token para acceder a los servicios de Rimac."
+        description: "Token de acceso."
         required: true
         type: "string"
+        default: "Beared TestNoToken"
       - in: "body"
         name: "body"
         description: "datos de la cotización."
@@ -80,6 +82,7 @@ paths:
         description: "Token de acceso."
         required: true
         type: "string"
+        default: "Beared TestNoToken"
       - name: "tipodoc"
         in: "query"
         description: "Tipo de documento de identidad."
@@ -109,9 +112,10 @@ paths:
       parameters:
       - name: "Authorization"
         in: "header"
-        description: "Token para acceder a los servicios de Rimac."
+        description: "Token de acceso."
         required: true
         type: "string"
+        default: "Beared TestNoToken"
       - name: "placa"
         in: "query"
         description: "Placa del vehículo."
@@ -130,7 +134,7 @@ definitions:
   Cotizacion:
     type: "object"
     properties:
-      acuerdo:
+      ideacuerdo:
         type: "string"
       fecinivig:
         type: "string"
@@ -220,6 +224,9 @@ definitions:
         format: "int32"
       message:
         type: "string"
+    example:
+      code: 202
+      message: "Error"
   Vehiculo_VEHICULO_SUNARP:
     properties:
       tipoAltoRiesgo:
