@@ -72,7 +72,7 @@ paths:
   /tercero:
     get:
       tags:
-      - "BuscarTercero"
+      - "Tercero"
       summary: "Tercero"
       description: "Busca un tercero a través de un tipo y número de documento de\
         \ identidad.\n"
