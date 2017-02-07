@@ -149,8 +149,8 @@ definitions:
       - ideplan: ""
         oa:
         - tipo: "vehiculo"
-        - ideoa: "1"
-        - detalle:
+          ideoa: "1"
+          detalle:
           - idedato: "txtnumero_de_motor"
             valor: "HR16298859B"
           - idedato: "selmarcadevehiculo"
