@@ -77,12 +77,6 @@ paths:
       description: "Busca un tercero a través de un tipo y número de documento de\
         \ identidad.\n"
       parameters:
-      - name: "Authorization"
-        in: "header"
-        description: "Token de acceso."
-        required: true
-        type: "string"
-        default: "Beared TestNoToken"
       - name: "tipodoc"
         in: "query"
         description: "Tipo de documento de identidad."
