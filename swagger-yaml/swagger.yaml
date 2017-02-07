@@ -8,6 +8,8 @@ host: "rasveuswap01.azurewebsites.net"
 basePath: "/RimacChatbot/rest"
 schemes:
 - "https"
+consumes:
+- "application/json"
 produces:
 - "application/json"
 paths:
@@ -15,8 +17,8 @@ paths:
     post:
       tags:
       - "Acuerdo"
-      summary: "Vehículos"
-      description: "Creación de un acuerdo\n"
+      summary: "Acuerdo"
+      description: "Creación de un acuerdo (cotización, pólizas)\n"
       consumes:
       - "application/json"
       - "text/plain"
@@ -34,13 +36,13 @@ paths:
           $ref: "#/definitions/Cotizacion"
       responses:
         200:
-          description: "Acuerdo creado"
+          description: "Acuerdo creado, devuelve los planes"
           schema:
             type: "array"
             items:
               $ref: "#/definitions/PlanCotizado"
         default:
-          description: "Unexpected error"
+          description: "Error inesperado"
           schema:
             $ref: "#/definitions/Error"
     put:
@@ -48,9 +50,6 @@ paths:
       - "Acuerdo"
       summary: "Vehículos"
       description: "Actualización de un acuerdo\n"
-      consumes:
-      - "application/json"
-      - "text/plain"
       parameters:
       - name: "ideacuerdo"
         in: "header"
@@ -71,19 +70,19 @@ paths:
   /tercero:
     get:
       tags:
-      - "Vehículo"
+      - "Tercero"
       summary: "Tercero"
       description: "Busca un tercero a través de un tipo y número de documento de\
         \ identidad.\n"
       parameters:
       - name: "Authorization"
         in: "header"
-        description: "Token para acceder a los servicios de Rimac."
+        description: "Token de acceso."
         required: true
         type: "string"
       - name: "tipodoc"
         in: "query"
-        description: "Tipo de documento de indentidad."
+        description: "Tipo de documento de identidad."
         required: false
         type: "string"
         default: "2"
@@ -105,10 +104,8 @@ paths:
     get:
       tags:
       - "Vehículo"
-      summary: "Vehículos"
-      description: "Los Vehículos endpoints retornan informacion sobre un vehículo\
-        \ dada una placa. La respuesta incluye la marca, modelo, año de fabricació\
-        n y otra información relevante al vehículo.\n"
+      summary: "Vehículo"
+      description: "Busca un vehículo a través de una placa.\n"
       parameters:
       - name: "Authorization"
         in: "header"
@@ -122,11 +119,11 @@ paths:
         type: "string"
       responses:
         200:
-          description: "Un vehículo"
+          description: "Vehículo encontrado"
           schema:
             $ref: "#/definitions/Vehiculo"
-        default:
-          description: "Unexpected error"
+        404:
+          description: "Vehículo no encontrado"
           schema:
             $ref: "#/definitions/Error"
 definitions:
