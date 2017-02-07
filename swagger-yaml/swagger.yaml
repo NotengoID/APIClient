@@ -68,6 +68,39 @@ paths:
           description: "Acuerdo actualizado"
         404:
           description: "Acuerdo no encontraro o inválido"
+  /tercero:
+    get:
+      tags:
+      - "Vehículo"
+      summary: "Tercero"
+      description: "Retorna informacion sobre un tercero vehículo dado un tipo de\
+        \ documento y un número de documento.\n"
+      parameters:
+      - name: "Authorization"
+        in: "header"
+        description: "Token para acceder a los servicios de Rimac."
+        required: true
+        type: "string"
+      - name: "tipodoc"
+        in: "query"
+        description: "Tipo de documento de indentidad."
+        required: false
+        type: "string"
+        default: "2"
+      - name: "nrodoc"
+        in: "query"
+        description: "Número de documento de identidad."
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "Un vehículo"
+          schema:
+            $ref: "#/definitions/Vehiculo"
+        default:
+          description: "Unexpected error"
+          schema:
+            $ref: "#/definitions/Error"
   /vehiculo:
     get:
       tags:
@@ -149,6 +182,39 @@ definitions:
         description: "Resultado de la búsqueda."
       VEHICULO_SUNARP:
         $ref: "#/definitions/Vehiculo_VEHICULO_SUNARP"
+  Tercero:
+    type: "object"
+    properties:
+      codexterno:
+        type: "string"
+      correo:
+        type: "string"
+      direccion:
+        type: "string"
+      dscidpgenero:
+        type: "string"
+      edad:
+        type: "string"
+      estadocivil:
+        type: "string"
+      fecnacimiento:
+        type: "string"
+      idetercero:
+        type: "string"
+      idpgenero:
+        type: "string"
+      idptipodocumento:
+        type: "string"
+      idptipotercero:
+        type: "string"
+      indexrow:
+        type: "string"
+      nombre:
+        type: "string"
+      numerodoc:
+        type: "string"
+      stster:
+        type: "string"
   Error:
     type: "object"
     properties:
