@@ -147,7 +147,7 @@ definitions:
       fecinivig: "01/01/2018"
       ur:
       - tipo: "vehiculo"
-      - ideoa: "1"
+        ideoa: "1"
   ObjectoAsegurado:
     type: "object"
     properties:
