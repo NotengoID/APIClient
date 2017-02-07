@@ -1,0 +1,215 @@
+---
+swagger: "2.0"
+info:
+  description: "Todo va estar bien con tu API favorita."
+  version: "1.0.0"
+  title: "Rimac API"
+host: "rasveuswap01.azurewebsites.net"
+basePath: "/RimacChatbot/rest"
+schemes:
+- "https"
+produces:
+- "application/json"
+paths:
+  /acuerdo:
+    post:
+      tags:
+      - "Acuerdo"
+      summary: "Vehículos"
+      description: "Creación de un acuerdo\n"
+      consumes:
+      - "application/json"
+      - "text/plain"
+      parameters:
+      - name: "Authorization"
+        in: "header"
+        description: "Token para acceder a los servicios de Rimac."
+        required: true
+        type: "string"
+      - in: "body"
+        name: "body"
+        description: "datos de la cotización."
+        required: true
+        schema:
+          $ref: "#/definitions/Cotizacion"
+      responses:
+        200:
+          description: "Acuerdo creado"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/PlanCotizado"
+        default:
+          description: "Unexpected error"
+          schema:
+            $ref: "#/definitions/Error"
+    put:
+      tags:
+      - "Acuerdo"
+      summary: "Vehículos"
+      description: "Actualización de un acuerdo\n"
+      consumes:
+      - "application/json"
+      - "text/plain"
+      parameters:
+      - name: "ideacuerdo"
+        in: "header"
+        description: "Token para acceder a los servicios de Rimac."
+        required: true
+        type: "string"
+      - in: "body"
+        name: "body"
+        description: "datos de la cotización."
+        required: true
+        schema:
+          $ref: "#/definitions/Cotizacion"
+      responses:
+        200:
+          description: "Acuerdo actualizado"
+        404:
+          description: "Acuerdo no encontraro o inválido"
+  /vehiculo:
+    get:
+      tags:
+      - "Vehículo"
+      summary: "Vehículos"
+      description: "Los Vehículos endpoints retornan informacion sobre un vehículo\
+        \ dada una placa. La respuesta incluye la marca, modelo, año de fabricació\
+        n y otra información relevante al vehículo.\n"
+      parameters:
+      - name: "Authorization"
+        in: "header"
+        description: "Token para acceder a los servicios de Rimac."
+        required: true
+        type: "string"
+      - name: "placa"
+        in: "query"
+        description: "Placa del vehículo."
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "Un vehículo"
+          schema:
+            $ref: "#/definitions/Vehiculo"
+        default:
+          description: "Unexpected error"
+          schema:
+            $ref: "#/definitions/Error"
+definitions:
+  Cotizacion:
+    type: "object"
+    properties:
+      acuerdo:
+        type: "string"
+      fecinivig:
+        type: "string"
+      ur:
+        type: "array"
+        items:
+          $ref: "#/definitions/ObjectoAsegurado"
+  ObjectoAsegurado:
+    type: "object"
+    properties:
+      tipo:
+        type: "string"
+      ideoa:
+        type: "string"
+      detalle:
+        type: "array"
+        items:
+          $ref: "#/definitions/DatoParticular"
+  DatoParticular:
+    type: "object"
+    properties:
+      idevalor:
+        type: "string"
+      valor:
+        type: "string"
+  PlanCotizado:
+    type: "object"
+    properties:
+      primaneta:
+        type: "string"
+      dscplan:
+        type: "string"
+      ideplan:
+        type: "string"
+      primabruta:
+        type: "string"
+      simbolomoneda:
+        type: "string"
+      prima:
+        type: "string"
+  Vehiculo:
+    type: "object"
+    properties:
+      res:
+        type: "string"
+        description: "Resultado de la búsqueda."
+      VEHICULO_SUNARP:
+        $ref: "#/definitions/Vehiculo_VEHICULO_SUNARP"
+  Error:
+    type: "object"
+    properties:
+      code:
+        type: "integer"
+        format: "int32"
+      message:
+        type: "string"
+  Vehiculo_VEHICULO_SUNARP:
+    properties:
+      tipoAltoRiesgo:
+        type: "string"
+      descTipoRimac:
+        type: "string"
+      codGrupoRimac:
+        type: "string"
+      valorComercial:
+        type: "integer"
+      clase:
+        type: "string"
+      marca:
+        type: "string"
+      indPractimovil:
+        type: "string"
+      descModeloRimac:
+        type: "string"
+      placaVigente:
+        type: "string"
+      otraObservacion:
+        type: "string"
+      anioFabricacion:
+        type: "string"
+      codMarcaRimac:
+        type: "string"
+      nroSerie:
+        type: "string"
+      descClaseRimac:
+        type: "string"
+      nroMotor:
+        type: "string"
+      codClaseRimac:
+        type: "string"
+      descGrupoRimac:
+        type: "string"
+      descMarcaRimac:
+        type: "string"
+      indClasico:
+        type: "string"
+      modelo:
+        type: "string"
+      indChinoHindu:
+        type: "string"
+      gpsRequerido:
+        type: "boolean"
+      valorNuevo:
+        type: "integer"
+      codModeloRimac:
+        type: "string"
+      indPremier:
+        type: "string"
+      ind4X4:
+        type: "string"
+      codTipoRimac:
+        type: "string"
