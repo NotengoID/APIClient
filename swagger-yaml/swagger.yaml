@@ -73,8 +73,8 @@ paths:
       tags:
       - "Vehículo"
       summary: "Tercero"
-      description: "Retorna informacion sobre un tercero vehículo dado un tipo de\
-        \ documento y un número de documento.\n"
+      description: "Busca un tercero a través de un tipo y número de documento de\
+        \ identidad.\n"
       parameters:
       - name: "Authorization"
         in: "header"
@@ -94,11 +94,11 @@ paths:
         type: "string"
       responses:
         200:
-          description: "Un vehículo"
+          description: "Tercero encontrado"
           schema:
-            $ref: "#/definitions/Vehiculo"
-        default:
-          description: "Unexpected error"
+            $ref: "#/definitions/Tercero"
+        404:
+          description: "Tercero no encontrado"
           schema:
             $ref: "#/definitions/Error"
   /vehiculo:
