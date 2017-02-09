@@ -160,7 +160,7 @@ definitions:
       ur:
         type: "array"
         items:
-          $ref: "#/definitions/ObjectoAsegurado"
+          $ref: "#/definitions/UnidadRiesgo"
       participantes:
         $ref: "#/definitions/Participante"
       ordenentrada:
