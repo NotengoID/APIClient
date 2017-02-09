@@ -224,6 +224,13 @@ definitions:
         type: "string"
       emailcontacto:
         type: "string"
+      formacobro:
+        $ref: "#/definitions/FormaCobro"
+  FormaCobro:
+    type: "object"
+    properties:
+      ideformacobro:
+        type: "string"
   OrdenEntrega:
     type: "object"
     properties:
