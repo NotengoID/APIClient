@@ -8,6 +8,7 @@ import io.swagger.client.Pair;
 import javax.ws.rs.core.GenericType;
 
 import io.swagger.client.model.Error;
+import io.swagger.client.model.MedioPago;
 import io.swagger.client.model.Tercero;
 
 import java.util.ArrayList;
@@ -15,7 +16,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-09T21:37:20.735Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-09T23:03:41.247Z")
 public class TerceroApi {
   private ApiClient apiClient;
 
@@ -80,22 +81,22 @@ public class TerceroApi {
     return apiClient.invokeAPI(localVarPath, "GET", localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, localVarReturnType);
       }
   /**
-   * Tercero
-   * Busca un tercero a través de un tipo y número de documento de identidad. 
-   * @param idetercero Tipo de documento de identidad. (required)
-   * @return Tercero
+   * 
+   * Busca los medios de pago de un tercero. 
+   * @param idetercero Identificador del tercero. (required)
+   * @return MedioPago
    * @throws ApiException if fails to make API call
    */
-  public Tercero terceroIdeterceroMediocobroGet(String idetercero) throws ApiException {
+  public MedioPago terceroIdeterceroMediopagoGet(String idetercero) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'idetercero' is set
     if (idetercero == null) {
-      throw new ApiException(400, "Missing the required parameter 'idetercero' when calling terceroIdeterceroMediocobroGet");
+      throw new ApiException(400, "Missing the required parameter 'idetercero' when calling terceroIdeterceroMediopagoGet");
     }
     
     // create path and map variables
-    String localVarPath = "/tercero/{idetercero}/mediocobro".replaceAll("\\{format\\}","json")
+    String localVarPath = "/tercero/{idetercero}/mediopago".replaceAll("\\{format\\}","json")
       .replaceAll("\\{" + "idetercero" + "\\}", apiClient.escapeString(idetercero.toString()));
 
     // query params
@@ -118,7 +119,7 @@ public class TerceroApi {
 
     String[] localVarAuthNames = new String[] {  };
 
-    GenericType<Tercero> localVarReturnType = new GenericType<Tercero>() {};
+    GenericType<MedioPago> localVarReturnType = new GenericType<MedioPago>() {};
     return apiClient.invokeAPI(localVarPath, "GET", localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, localVarReturnType);
       }
 }

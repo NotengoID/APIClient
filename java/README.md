@@ -93,9 +93,10 @@ Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *AcuerdoApi* | [**acuerdoPost**](docs/AcuerdoApi.md#acuerdoPost) | **POST** /acuerdo | Acuerdo
 *AcuerdoApi* | [**acuerdoPut**](docs/AcuerdoApi.md#acuerdoPut) | **PUT** /acuerdo | Acuerdo
+*MedioPagoApi* | [**terceroIdeterceroMediopagoGet**](docs/MedioPagoApi.md#terceroIdeterceroMediopagoGet) | **GET** /tercero/{idetercero}/mediopago | 
 *TerceroApi* | [**terceroGet**](docs/TerceroApi.md#terceroGet) | **GET** /tercero | Tercero
-*TerceroApi* | [**terceroIdeterceroMediocobroGet**](docs/TerceroApi.md#terceroIdeterceroMediocobroGet) | **GET** /tercero/{idetercero}/mediocobro | Tercero
-*VehculoApi* | [**vehiculoGet**](docs/VehculoApi.md#vehiculoGet) | **GET** /vehiculo | Vehículo
+*TerceroApi* | [**terceroIdeterceroMediopagoGet**](docs/TerceroApi.md#terceroIdeterceroMediopagoGet) | **GET** /tercero/{idetercero}/mediopago | 
+*VehculoApi* | [**vehiculoGet**](docs/VehculoApi.md#vehiculoGet) | **GET** /vehiculo | Veh&amp;iacute;culo
 
 
 ## Documentation for Models
@@ -103,9 +104,15 @@ Class | Method | HTTP request | Description
  - [Cotizacion](docs/Cotizacion.md)
  - [DatoParticular](docs/DatoParticular.md)
  - [Error](docs/Error.md)
+ - [Financimiento](docs/Financimiento.md)
+ - [FormaCobro](docs/FormaCobro.md)
+ - [MedioPago](docs/MedioPago.md)
  - [ObjectoAsegurado](docs/ObjectoAsegurado.md)
+ - [OrdenEntrega](docs/OrdenEntrega.md)
+ - [Participante](docs/Participante.md)
  - [PlanCotizado](docs/PlanCotizado.md)
  - [Tercero](docs/Tercero.md)
+ - [UnidadRiesgo](docs/UnidadRiesgo.md)
  - [Vehiculo](docs/Vehiculo.md)
  - [VehiculoVEHICULOSUNARP](docs/VehiculoVEHICULOSUNARP.md)
 

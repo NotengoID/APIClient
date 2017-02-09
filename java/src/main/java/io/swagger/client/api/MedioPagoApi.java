@@ -8,7 +8,7 @@ import io.swagger.client.Pair;
 import javax.ws.rs.core.GenericType;
 
 import io.swagger.client.model.Error;
-import io.swagger.client.model.Vehiculo;
+import io.swagger.client.model.MedioPago;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -16,14 +16,14 @@ import java.util.List;
 import java.util.Map;
 
 @javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-09T23:03:41.247Z")
-public class VehculoApi {
+public class MedioPagoApi {
   private ApiClient apiClient;
 
-  public VehculoApi() {
+  public MedioPagoApi() {
     this(Configuration.getDefaultApiClient());
   }
 
-  public VehculoApi(ApiClient apiClient) {
+  public MedioPagoApi(ApiClient apiClient) {
     this.apiClient = apiClient;
   }
 
@@ -36,39 +36,31 @@ public class VehculoApi {
   }
 
   /**
-   * Veh&amp;iacute;culo
-   * Busca un vehículo a través de una placa. 
-   * @param authorization Token de acceso. (required)
-   * @param placa Placa del vehículo. (required)
-   * @return Vehiculo
+   * 
+   * Busca los medios de pago de un tercero. 
+   * @param idetercero Identificador del tercero. (required)
+   * @return MedioPago
    * @throws ApiException if fails to make API call
    */
-  public Vehiculo vehiculoGet(String authorization, String placa) throws ApiException {
+  public MedioPago terceroIdeterceroMediopagoGet(String idetercero) throws ApiException {
     Object localVarPostBody = null;
     
-    // verify the required parameter 'authorization' is set
-    if (authorization == null) {
-      throw new ApiException(400, "Missing the required parameter 'authorization' when calling vehiculoGet");
-    }
-    
-    // verify the required parameter 'placa' is set
-    if (placa == null) {
-      throw new ApiException(400, "Missing the required parameter 'placa' when calling vehiculoGet");
+    // verify the required parameter 'idetercero' is set
+    if (idetercero == null) {
+      throw new ApiException(400, "Missing the required parameter 'idetercero' when calling terceroIdeterceroMediopagoGet");
     }
     
     // create path and map variables
-    String localVarPath = "/vehiculo".replaceAll("\\{format\\}","json");
+    String localVarPath = "/tercero/{idetercero}/mediopago".replaceAll("\\{format\\}","json")
+      .replaceAll("\\{" + "idetercero" + "\\}", apiClient.escapeString(idetercero.toString()));
 
     // query params
     List<Pair> localVarQueryParams = new ArrayList<Pair>();
     Map<String, String> localVarHeaderParams = new HashMap<String, String>();
     Map<String, Object> localVarFormParams = new HashMap<String, Object>();
 
-    localVarQueryParams.addAll(apiClient.parameterToPairs("", "placa", placa));
 
-    if (authorization != null)
-      localVarHeaderParams.put("Authorization", apiClient.parameterToString(authorization));
-
+    
     
     final String[] localVarAccepts = {
       "application/json"
@@ -82,7 +74,7 @@ public class VehculoApi {
 
     String[] localVarAuthNames = new String[] {  };
 
-    GenericType<Vehiculo> localVarReturnType = new GenericType<Vehiculo>() {};
+    GenericType<MedioPago> localVarReturnType = new GenericType<MedioPago>() {};
     return apiClient.invokeAPI(localVarPath, "GET", localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, localVarReturnType);
       }
 }

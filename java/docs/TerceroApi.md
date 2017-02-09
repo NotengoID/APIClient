@@ -5,7 +5,7 @@ All URIs are relative to *https://rasveuswap01.azurewebsites.net/RimacChatbot/re
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**terceroGet**](TerceroApi.md#terceroGet) | **GET** /tercero | Tercero
-[**terceroIdeterceroMediocobroGet**](TerceroApi.md#terceroIdeterceroMediocobroGet) | **GET** /tercero/{idetercero}/mediocobro | Tercero
+[**terceroIdeterceroMediopagoGet**](TerceroApi.md#terceroIdeterceroMediopagoGet) | **GET** /tercero/{idetercero}/mediopago | 
 
 
 <a name="terceroGet"></a>
@@ -55,13 +55,13 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="terceroIdeterceroMediocobroGet"></a>
-# **terceroIdeterceroMediocobroGet**
-> Tercero terceroIdeterceroMediocobroGet(idetercero)
+<a name="terceroIdeterceroMediopagoGet"></a>
+# **terceroIdeterceroMediopagoGet**
+> MedioPago terceroIdeterceroMediopagoGet(idetercero)
 
-Tercero
 
-Busca un tercero a través de un tipo y número de documento de identidad. 
+
+Busca los medios de pago de un tercero. 
 
 ### Example
 ```java
@@ -71,12 +71,12 @@ Busca un tercero a través de un tipo y número de documento de identidad.
 
 
 TerceroApi apiInstance = new TerceroApi();
-String idetercero = "idetercero_example"; // String | Tipo de documento de identidad.
+String idetercero = "idetercero_example"; // String | Identificador del tercero.
 try {
-    Tercero result = apiInstance.terceroIdeterceroMediocobroGet(idetercero);
+    MedioPago result = apiInstance.terceroIdeterceroMediopagoGet(idetercero);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling TerceroApi#terceroIdeterceroMediocobroGet");
+    System.err.println("Exception when calling TerceroApi#terceroIdeterceroMediopagoGet");
     e.printStackTrace();
 }
 ```
@@ -85,11 +85,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **idetercero** | **String**| Tipo de documento de identidad. |
+ **idetercero** | **String**| Identificador del tercero. |
 
 ### Return type
 
-[**Tercero**](Tercero.md)
+[**MedioPago**](MedioPago.md)
 
 ### Authorization
 

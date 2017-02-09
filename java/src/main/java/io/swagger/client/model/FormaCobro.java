@@ -7,50 +7,29 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
 /**
- * Error
+ * FormaCobro
  */
 @javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-09T23:03:41.247Z")
-public class Error {
-  @JsonProperty("code")
-  private Integer code = null;
+public class FormaCobro {
+  @JsonProperty("ideformacobro")
+  private String ideformacobro = null;
 
-  @JsonProperty("message")
-  private String message = null;
-
-  public Error code(Integer code) {
-    this.code = code;
+  public FormaCobro ideformacobro(String ideformacobro) {
+    this.ideformacobro = ideformacobro;
     return this;
   }
 
    /**
-   * Get code
-   * @return code
+   * Get ideformacobro
+   * @return ideformacobro
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Integer getCode() {
-    return code;
+  public String getIdeformacobro() {
+    return ideformacobro;
   }
 
-  public void setCode(Integer code) {
-    this.code = code;
-  }
-
-  public Error message(String message) {
-    this.message = message;
-    return this;
-  }
-
-   /**
-   * Get message
-   * @return message
-  **/
-  @ApiModelProperty(example = "null", value = "")
-  public String getMessage() {
-    return message;
-  }
-
-  public void setMessage(String message) {
-    this.message = message;
+  public void setIdeformacobro(String ideformacobro) {
+    this.ideformacobro = ideformacobro;
   }
 
 
@@ -62,24 +41,22 @@ public class Error {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    Error error = (Error) o;
-    return Objects.equals(this.code, error.code) &&
-        Objects.equals(this.message, error.message);
+    FormaCobro formaCobro = (FormaCobro) o;
+    return Objects.equals(this.ideformacobro, formaCobro.ideformacobro);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(code, message);
+    return Objects.hash(ideformacobro);
   }
 
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class Error {\n");
+    sb.append("class FormaCobro {\n");
     
-    sb.append("    code: ").append(toIndentedString(code)).append("\n");
-    sb.append("    message: ").append(toIndentedString(message)).append("\n");
+    sb.append("    ideformacobro: ").append(toIndentedString(ideformacobro)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -9,7 +9,7 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * VehiculoVEHICULOSUNARP
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-09T21:37:20.735Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-09T23:03:41.247Z")
 public class VehiculoVEHICULOSUNARP {
   @JsonProperty("tipoAltoRiesgo")
   private String tipoAltoRiesgo = null;

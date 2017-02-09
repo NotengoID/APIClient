@@ -19,7 +19,7 @@ public class VehculoApiTest {
 
     
     /**
-     * Vehículo
+     * Veh&amp;iacute;culo
      *
      * Busca un vehículo a través de una placa. 
      *
