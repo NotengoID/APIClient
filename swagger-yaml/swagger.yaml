@@ -153,6 +153,8 @@ definitions:
         type: "string"
       fecinivig:
         type: "string"
+      ideproducto:
+        type: "string"
       ur:
         type: "array"
         items:
@@ -190,6 +192,63 @@ definitions:
             valor: "2010"
           - idedato: "txtplaca_de_rodaje"
             valor: "A7V510"
+  Cotizacion2:
+    type: "object"
+    properties:
+      ideacuerdo:
+        type: "string"
+      fecinivig:
+        type: "string"
+      ideproducto:
+        type: "string"
+      ur:
+        type: "array"
+        items:
+          $ref: "#/definitions/ObjectoAsegurado"
+    example:
+      ideacuerdo: ""
+      fecinivig: "01/01/2018"
+      ur:
+      - ideplan: ""
+        oa:
+        - tipo: "vehiculo"
+          ideoa: "1"
+          detalle:
+          - idedato: "txtnumero_de_motor"
+            valor: "HR16298859B"
+          - idedato: "selmarcadevehiculo"
+            valor: "NISSAN"
+          - idedato: "selusos_de_vehiculos"
+            valor: "PARTICULAR"
+          - idedato: "txtnro_pasajeros"
+            valor: "5"
+          - idedato: "txtfechainicionuevosoat"
+            valor: "01/01/2018"
+          - idedato: "selmodelodevehiculo"
+            valor: "TIIDA"
+          - idedato: "txtmodelo_especifico"
+            valor: "TIIDA"
+          - idedato: "txtnumero_de_serie"
+            valor: "3N1CC1AG8BL365816"
+          - idedato: "selclasedevehiculo"
+            valor: "AUTOMOVIL"
+          - idedato: "seltipodevehiculo"
+            valor: "AUTO"
+          - idedato: "selanos_de_fabricacion"
+            valor: "2010"
+          - idedato: "txtplaca_de_rodaje"
+            valor: "A7V510"
+  UnidadRiesgo:
+    type: "object"
+    properties:
+      numero:
+        type: "string"
+      ideplan:
+        type: "string"
+      oa:
+        type: "array"
+        items:
+          $ref: "#/definitions/ObjectoAsegurado"
   ObjectoAsegurado:
     type: "object"
     properties:
