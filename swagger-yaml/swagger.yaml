@@ -161,6 +161,10 @@ definitions:
         type: "array"
         items:
           $ref: "#/definitions/ObjectoAsegurado"
+      participantes:
+        $ref: "#/definitions/Participante"
+      ordenentrada:
+        $ref: "#/definitions/OrdenEntrega"
     example:
       ideacuerdo: ""
       fecinivig: "01/01/2018"
