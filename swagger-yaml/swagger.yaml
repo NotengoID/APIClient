@@ -216,6 +216,14 @@ definitions:
         type: "string"
       prc:
         type: "string"
+      tipo:
+        type: "string"
+      idptiprelter:
+        type: "string"
+      tlfcontacto:
+        type: "string"
+      emailcontacto:
+        type: "string"
   OrdenEntrega:
     type: "object"
     properties:
@@ -245,6 +253,8 @@ definitions:
   ObjectoAsegurado:
     type: "object"
     properties:
+      numero:
+        type: "string"
       tipo:
         type: "string"
       ideoa:
