@@ -1,12 +1,14 @@
 package io.swagger.client;
 
-import com.fasterxml.jackson.annotation.*;
-import com.fasterxml.jackson.databind.*;
-import com.fasterxml.jackson.datatype.joda.*;
-
 import java.text.DateFormat;
 
 import javax.ws.rs.ext.ContextResolver;
+
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
+import com.fasterxml.jackson.datatype.joda.JodaModule;
 
 @javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-07T17:18:24.162Z")
 public class JSON implements ContextResolver<ObjectMapper> {
@@ -30,7 +32,6 @@ public class JSON implements ContextResolver<ObjectMapper> {
     mapper.setDateFormat(dateFormat);
   }
 
-  @Override
   public ObjectMapper getContext(Class<?> type) {
     return mapper;
   }

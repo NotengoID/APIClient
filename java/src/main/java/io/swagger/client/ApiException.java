@@ -1,7 +1,7 @@
 package io.swagger.client;
 
-import java.util.Map;
 import java.util.List;
+import java.util.Map;
 
 @javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-07T17:18:24.162Z")
 public class ApiException extends Exception {

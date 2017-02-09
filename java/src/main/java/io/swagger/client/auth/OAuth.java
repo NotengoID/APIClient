@@ -2,10 +2,10 @@
 
 package io.swagger.client.auth;
 
-import io.swagger.client.Pair;
-
-import java.util.Map;
 import java.util.List;
+import java.util.Map;
+
+import io.swagger.client.Pair;
 
 @javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-07T17:18:24.162Z")
 public class OAuth implements Authentication {
@@ -19,7 +19,6 @@ public class OAuth implements Authentication {
     this.accessToken = accessToken;
   }
 
-  @Override
   public void applyToParams(List<Pair> queryParams, Map<String, String> headerParams) {
     if (accessToken != null) {
       headerParams.put("Authorization", "Bearer " + accessToken);

@@ -28,10 +28,11 @@ public class VehculoApiTest {
      */
     @Test
     public void vehiculoGetTest() throws ApiException {
-        String authorization = null;
-        String placa = null;
-        // Vehiculo response = api.vehiculoGet(authorization, placa);
-
+        String authorization = "hgh";
+        String placa = "LGM360";
+        Vehiculo response = api.vehiculoGet(authorization, placa);
+        System.out.println("response: " + response);
+        System.out.println("objeto :" + response.getVEHICULOSUNARP().getClase());
         // TODO: test validations
     }
     

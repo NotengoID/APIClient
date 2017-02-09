@@ -1,5 +1,23 @@
 package io.swagger.client;
 
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.nio.file.Files;
+import java.text.DateFormat;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Entity;
@@ -20,32 +38,9 @@ import org.glassfish.jersey.media.multipart.FormDataContentDisposition;
 import org.glassfish.jersey.media.multipart.MultiPart;
 import org.glassfish.jersey.media.multipart.MultiPartFeature;
 
-import java.io.IOException;
-import java.io.InputStream;
-
-import java.nio.file.Files;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.HashMap;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.TimeZone;
-
-import java.net.URLEncoder;
-
-import java.io.File;
-import java.io.UnsupportedEncodingException;
-
-import java.text.DateFormat;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
+import io.swagger.client.auth.ApiKeyAuth;
 import io.swagger.client.auth.Authentication;
 import io.swagger.client.auth.HttpBasicAuth;
-import io.swagger.client.auth.ApiKeyAuth;
 import io.swagger.client.auth.OAuth;
 
 @javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-07T17:18:24.162Z")
@@ -319,7 +314,7 @@ public class ApiClient {
       return formatDate((Date) param);
     } else if (param instanceof Collection) {
       StringBuilder b = new StringBuilder();
-      for(Object o : (Collection)param) {
+      for(Object o : (Collection<?>)param) {
         if(b.length() > 0) {
           b.append(",");
         }

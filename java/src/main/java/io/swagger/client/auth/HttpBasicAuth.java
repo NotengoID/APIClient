@@ -2,14 +2,13 @@
 
 package io.swagger.client.auth;
 
-import io.swagger.client.Pair;
+import java.io.UnsupportedEncodingException;
+import java.util.List;
+import java.util.Map;
 
 import com.migcomponents.migbase64.Base64;
 
-import java.util.Map;
-import java.util.List;
-
-import java.io.UnsupportedEncodingException;
+import io.swagger.client.Pair;
 
 @javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-07T17:18:24.162Z")
 public class HttpBasicAuth implements Authentication {
@@ -32,7 +31,6 @@ public class HttpBasicAuth implements Authentication {
     this.password = password;
   }
 
-  @Override
   public void applyToParams(List<Pair> queryParams, Map<String, String> headerParams) {
     if (username == null && password == null) {
       return;

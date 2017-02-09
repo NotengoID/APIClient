@@ -1,19 +1,17 @@
 package io.swagger.client.api;
 
-import io.swagger.client.ApiException;
-import io.swagger.client.ApiClient;
-import io.swagger.client.Configuration;
-import io.swagger.client.Pair;
-
-import javax.ws.rs.core.GenericType;
-
-import io.swagger.client.model.Error;
-import io.swagger.client.model.Vehiculo;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import javax.ws.rs.core.GenericType;
+
+import io.swagger.client.ApiClient;
+import io.swagger.client.ApiException;
+import io.swagger.client.Configuration;
+import io.swagger.client.Pair;
+import io.swagger.client.model.Vehiculo;
 
 @javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-07T17:18:24.162Z")
 public class VehculoApi {
