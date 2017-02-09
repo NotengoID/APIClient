@@ -113,7 +113,7 @@ paths:
         200:
           description: "Tercero encontrado"
           schema:
-            $ref: "#/definitions/Tercero"
+            $ref: "#/definitions/MedioPago"
         404:
           description: "Tercero no encontrado"
           schema:
