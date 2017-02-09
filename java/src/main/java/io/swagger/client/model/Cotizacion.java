@@ -12,10 +12,10 @@ import java.util.List;
 /**
  * Cotizacion
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-07T17:18:24.162Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-09T21:37:20.735Z")
 public class Cotizacion {
-  @JsonProperty("acuerdo")
-  private String acuerdo = null;
+  @JsonProperty("ideacuerdo")
+  private String ideacuerdo = null;
 
   @JsonProperty("fecinivig")
   private String fecinivig = null;
@@ -23,22 +23,22 @@ public class Cotizacion {
   @JsonProperty("ur")
   private List<ObjectoAsegurado> ur = new ArrayList<ObjectoAsegurado>();
 
-  public Cotizacion acuerdo(String acuerdo) {
-    this.acuerdo = acuerdo;
+  public Cotizacion ideacuerdo(String ideacuerdo) {
+    this.ideacuerdo = ideacuerdo;
     return this;
   }
 
    /**
-   * Get acuerdo
-   * @return acuerdo
+   * Get ideacuerdo
+   * @return ideacuerdo
   **/
   @ApiModelProperty(example = "null", value = "")
-  public String getAcuerdo() {
-    return acuerdo;
+  public String getIdeacuerdo() {
+    return ideacuerdo;
   }
 
-  public void setAcuerdo(String acuerdo) {
-    this.acuerdo = acuerdo;
+  public void setIdeacuerdo(String ideacuerdo) {
+    this.ideacuerdo = ideacuerdo;
   }
 
   public Cotizacion fecinivig(String fecinivig) {
@@ -92,14 +92,14 @@ public class Cotizacion {
       return false;
     }
     Cotizacion cotizacion = (Cotizacion) o;
-    return Objects.equals(this.acuerdo, cotizacion.acuerdo) &&
+    return Objects.equals(this.ideacuerdo, cotizacion.ideacuerdo) &&
         Objects.equals(this.fecinivig, cotizacion.fecinivig) &&
         Objects.equals(this.ur, cotizacion.ur);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(acuerdo, fecinivig, ur);
+    return Objects.hash(ideacuerdo, fecinivig, ur);
   }
 
 
@@ -108,7 +108,7 @@ public class Cotizacion {
     StringBuilder sb = new StringBuilder();
     sb.append("class Cotizacion {\n");
     
-    sb.append("    acuerdo: ").append(toIndentedString(acuerdo)).append("\n");
+    sb.append("    ideacuerdo: ").append(toIndentedString(ideacuerdo)).append("\n");
     sb.append("    fecinivig: ").append(toIndentedString(fecinivig)).append("\n");
     sb.append("    ur: ").append(toIndentedString(ur)).append("\n");
     sb.append("}");

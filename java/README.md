@@ -71,7 +71,7 @@ public class AcuerdoApiExample {
     public static void main(String[] args) {
         
         AcuerdoApi apiInstance = new AcuerdoApi();
-        String authorization = "authorization_example"; // String | Token para acceder a los servicios de Rimac.
+        String authorization = "Beared TestNoToken"; // String | Token de acceso.
         Cotizacion body = new Cotizacion(); // Cotizacion | datos de la cotización.
         try {
             List<PlanCotizado> result = apiInstance.acuerdoPost(authorization, body);
@@ -91,9 +91,11 @@ All URIs are relative to *https://rasveuswap01.azurewebsites.net/RimacChatbot/re
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*AcuerdoApi* | [**acuerdoPost**](docs/AcuerdoApi.md#acuerdoPost) | **POST** /acuerdo | Vehículos
-*AcuerdoApi* | [**acuerdoPut**](docs/AcuerdoApi.md#acuerdoPut) | **PUT** /acuerdo | Vehículos
-*VehculoApi* | [**vehiculoGet**](docs/VehculoApi.md#vehiculoGet) | **GET** /vehiculo | Vehículos
+*AcuerdoApi* | [**acuerdoPost**](docs/AcuerdoApi.md#acuerdoPost) | **POST** /acuerdo | Acuerdo
+*AcuerdoApi* | [**acuerdoPut**](docs/AcuerdoApi.md#acuerdoPut) | **PUT** /acuerdo | Acuerdo
+*TerceroApi* | [**terceroGet**](docs/TerceroApi.md#terceroGet) | **GET** /tercero | Tercero
+*TerceroApi* | [**terceroIdeterceroMediocobroGet**](docs/TerceroApi.md#terceroIdeterceroMediocobroGet) | **GET** /tercero/{idetercero}/mediocobro | Tercero
+*VehculoApi* | [**vehiculoGet**](docs/VehculoApi.md#vehiculoGet) | **GET** /vehiculo | Vehículo
 
 
 ## Documentation for Models
@@ -103,6 +105,7 @@ Class | Method | HTTP request | Description
  - [Error](docs/Error.md)
  - [ObjectoAsegurado](docs/ObjectoAsegurado.md)
  - [PlanCotizado](docs/PlanCotizado.md)
+ - [Tercero](docs/Tercero.md)
  - [Vehiculo](docs/Vehiculo.md)
  - [VehiculoVEHICULOSUNARP](docs/VehiculoVEHICULOSUNARP.md)
 

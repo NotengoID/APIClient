@@ -4,17 +4,17 @@ All URIs are relative to *https://rasveuswap01.azurewebsites.net/RimacChatbot/re
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**acuerdoPost**](AcuerdoApi.md#acuerdoPost) | **POST** /acuerdo | Vehículos
-[**acuerdoPut**](AcuerdoApi.md#acuerdoPut) | **PUT** /acuerdo | Vehículos
+[**acuerdoPost**](AcuerdoApi.md#acuerdoPost) | **POST** /acuerdo | Acuerdo
+[**acuerdoPut**](AcuerdoApi.md#acuerdoPut) | **PUT** /acuerdo | Acuerdo
 
 
 <a name="acuerdoPost"></a>
 # **acuerdoPost**
 > List&lt;PlanCotizado&gt; acuerdoPost(authorization, body)
 
-Vehículos
+Acuerdo
 
-Creación de un acuerdo 
+Creación de un acuerdo (cotización, pólizas) 
 
 ### Example
 ```java
@@ -24,7 +24,7 @@ Creación de un acuerdo
 
 
 AcuerdoApi apiInstance = new AcuerdoApi();
-String authorization = "authorization_example"; // String | Token para acceder a los servicios de Rimac.
+String authorization = "Beared TestNoToken"; // String | Token de acceso.
 Cotizacion body = new Cotizacion(); // Cotizacion | datos de la cotización.
 try {
     List<PlanCotizado> result = apiInstance.acuerdoPost(authorization, body);
@@ -39,7 +39,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **String**| Token para acceder a los servicios de Rimac. |
+ **authorization** | **String**| Token de acceso. | [default to Beared TestNoToken]
  **body** | [**Cotizacion**](Cotizacion.md)| datos de la cotización. |
 
 ### Return type
@@ -59,7 +59,7 @@ No authorization required
 # **acuerdoPut**
 > acuerdoPut(ideacuerdo, body)
 
-Vehículos
+Acuerdo
 
 Actualización de un acuerdo 
 
@@ -71,7 +71,7 @@ Actualización de un acuerdo
 
 
 AcuerdoApi apiInstance = new AcuerdoApi();
-String ideacuerdo = "ideacuerdo_example"; // String | Token para acceder a los servicios de Rimac.
+String ideacuerdo = "Beared TestNoToken"; // String | Token de acceso.
 Cotizacion body = new Cotizacion(); // Cotizacion | datos de la cotización.
 try {
     apiInstance.acuerdoPut(ideacuerdo, body);
@@ -85,7 +85,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ideacuerdo** | **String**| Token para acceder a los servicios de Rimac. |
+ **ideacuerdo** | **String**| Token de acceso. | [default to Beared TestNoToken]
  **body** | [**Cotizacion**](Cotizacion.md)| datos de la cotización. |
 
 ### Return type
@@ -98,6 +98,6 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, text/plain
+ - **Content-Type**: application/json
  - **Accept**: application/json
 

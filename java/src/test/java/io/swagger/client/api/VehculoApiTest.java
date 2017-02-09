@@ -19,9 +19,9 @@ public class VehculoApiTest {
 
     
     /**
-     * Vehículos
+     * Vehículo
      *
-     * Los Vehículos endpoints retornan informacion sobre un vehículo dada una placa. La respuesta incluye la marca, modelo, año de fabricación y otra información relevante al vehículo. 
+     * Busca un vehículo a través de una placa. 
      *
      * @throws ApiException
      *          if the Api call fails

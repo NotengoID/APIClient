@@ -20,9 +20,9 @@ public class AcuerdoApiTest {
 
     
     /**
-     * Vehículos
+     * Acuerdo
      *
-     * Creación de un acuerdo 
+     * Creación de un acuerdo (cotización, pólizas) 
      *
      * @throws ApiException
      *          if the Api call fails
@@ -37,7 +37,7 @@ public class AcuerdoApiTest {
     }
     
     /**
-     * Vehículos
+     * Acuerdo
      *
      * Actualización de un acuerdo 
      *

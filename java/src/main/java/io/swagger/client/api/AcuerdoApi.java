@@ -16,7 +16,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-07T17:18:24.162Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-09T21:37:20.735Z")
 public class AcuerdoApi {
   private ApiClient apiClient;
 
@@ -37,9 +37,9 @@ public class AcuerdoApi {
   }
 
   /**
-   * Vehículos
-   * Creación de un acuerdo 
-   * @param authorization Token para acceder a los servicios de Rimac. (required)
+   * Acuerdo
+   * Creación de un acuerdo (cotización, pólizas) 
+   * @param authorization Token de acceso. (required)
    * @param body datos de la cotización. (required)
    * @return List<PlanCotizado>
    * @throws ApiException if fails to make API call
@@ -86,9 +86,9 @@ public class AcuerdoApi {
     return apiClient.invokeAPI(localVarPath, "POST", localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, localVarReturnType);
       }
   /**
-   * Vehículos
+   * Acuerdo
    * Actualización de un acuerdo 
-   * @param ideacuerdo Token para acceder a los servicios de Rimac. (required)
+   * @param ideacuerdo Token de acceso. (required)
    * @param body datos de la cotización. (required)
    * @throws ApiException if fails to make API call
    */
@@ -124,7 +124,7 @@ public class AcuerdoApi {
     final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
 
     final String[] localVarContentTypes = {
-      "application/json", "text/plain"
+      "application/json"
     };
     final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
 
