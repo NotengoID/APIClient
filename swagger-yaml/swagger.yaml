@@ -97,6 +97,27 @@ paths:
           description: "Tercero no encontrado"
           schema:
             $ref: "#/definitions/Error"
+  /tercero/{idetercero}/mediopago:
+    get:
+      tags:
+      - "Tercero"
+      - "Medio Pago"
+      description: "Busca los medios de pago de un tercero.\n"
+      parameters:
+      - name: "idetercero"
+        in: "path"
+        description: "Identificador del tercero."
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "Tercero encontrado"
+          schema:
+            $ref: "#/definitions/Tercero"
+        404:
+          description: "Tercero no encontrado"
+          schema:
+            $ref: "#/definitions/Error"
   /vehiculo:
     get:
       tags:
@@ -310,3 +331,4 @@ definitions:
         type: "string"
       codTipoRimac:
         type: "string"
+x-azure-api-id: "RimacAPI"
