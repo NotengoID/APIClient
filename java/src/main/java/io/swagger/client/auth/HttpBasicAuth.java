@@ -10,7 +10,7 @@ import com.migcomponents.migbase64.Base64;
 
 import io.swagger.client.Pair;
 
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-07T17:18:24.162Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-09T23:03:41.247Z")
 public class HttpBasicAuth implements Authentication {
   private String username;
   private String password;

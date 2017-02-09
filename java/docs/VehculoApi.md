@@ -4,16 +4,16 @@ All URIs are relative to *https://rasveuswap01.azurewebsites.net/RimacChatbot/re
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**vehiculoGet**](VehculoApi.md#vehiculoGet) | **GET** /vehiculo | Vehículos
+[**vehiculoGet**](VehculoApi.md#vehiculoGet) | **GET** /vehiculo | Veh&amp;iacute;culo
 
 
 <a name="vehiculoGet"></a>
 # **vehiculoGet**
 > Vehiculo vehiculoGet(authorization, placa)
 
-Vehículos
+Veh&amp;iacute;culo
 
-Los Vehículos endpoints retornan informacion sobre un vehículo dada una placa. La respuesta incluye la marca, modelo, año de fabricación y otra información relevante al vehículo. 
+Busca un vehículo a través de una placa. 
 
 ### Example
 ```java
@@ -23,7 +23,7 @@ Los Vehículos endpoints retornan informacion sobre un vehículo dada una placa.
 
 
 VehculoApi apiInstance = new VehculoApi();
-String authorization = "authorization_example"; // String | Token para acceder a los servicios de Rimac.
+String authorization = "Beared TestNoToken"; // String | Token de acceso.
 String placa = "placa_example"; // String | Placa del vehículo.
 try {
     Vehiculo result = apiInstance.vehiculoGet(authorization, placa);
@@ -38,7 +38,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **String**| Token para acceder a los servicios de Rimac. |
+ **authorization** | **String**| Token de acceso. | [default to Beared TestNoToken]
  **placa** | **String**| Placa del vehículo. |
 
 ### Return type
@@ -51,6 +51,6 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 

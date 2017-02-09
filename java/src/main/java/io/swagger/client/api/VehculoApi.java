@@ -14,6 +14,7 @@ import io.swagger.client.Pair;
 import io.swagger.client.model.Vehiculo;
 
 @javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-07T17:18:24.162Z")
+
 public class VehculoApi {
   private ApiClient apiClient;
 
@@ -34,9 +35,9 @@ public class VehculoApi {
   }
 
   /**
-   * Vehículos
-   * Los Vehículos endpoints retornan informacion sobre un vehículo dada una placa. La respuesta incluye la marca, modelo, año de fabricación y otra información relevante al vehículo. 
-   * @param authorization Token para acceder a los servicios de Rimac. (required)
+   * Veh&amp;iacute;culo
+   * Busca un vehículo a través de una placa. 
+   * @param authorization Token de acceso. (required)
    * @param placa Placa del vehículo. (required)
    * @return Vehiculo
    * @throws ApiException if fails to make API call
@@ -74,7 +75,7 @@ public class VehculoApi {
     final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
 
     final String[] localVarContentTypes = {
-      
+      "application/json"
     };
     final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
 

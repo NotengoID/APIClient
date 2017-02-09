@@ -1,5 +1,15 @@
 package io.swagger.client.model;
 
+import java.util.Objects;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonCreator;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import io.swagger.client.model.Financimiento;
+import io.swagger.client.model.OrdenEntrega;
+import io.swagger.client.model.Participante;
+import io.swagger.client.model.UnidadRiesgo;
+>>>>>>> refs/remotes/origin/SWAGGERHUB
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -11,33 +21,45 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * Cotizacion
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-07T17:18:24.162Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-09T23:03:41.247Z")
 public class Cotizacion {
-  @JsonProperty("acuerdo")
-  private String acuerdo = null;
+  @JsonProperty("ideacuerdo")
+  private String ideacuerdo = null;
 
   @JsonProperty("fecinivig")
   private String fecinivig = null;
 
-  @JsonProperty("ur")
-  private List<ObjectoAsegurado> ur = new ArrayList<ObjectoAsegurado>();
+  @JsonProperty("ideproducto")
+  private String ideproducto = null;
 
-  public Cotizacion acuerdo(String acuerdo) {
-    this.acuerdo = acuerdo;
+  @JsonProperty("financimiento")
+  private Financimiento financimiento = null;
+
+  @JsonProperty("ur")
+  private List<UnidadRiesgo> ur = new ArrayList<UnidadRiesgo>();
+
+  @JsonProperty("participantes")
+  private Participante participantes = null;
+
+  @JsonProperty("ordenentrada")
+  private OrdenEntrega ordenentrada = null;
+
+  public Cotizacion ideacuerdo(String ideacuerdo) {
+    this.ideacuerdo = ideacuerdo;
     return this;
   }
 
    /**
-   * Get acuerdo
-   * @return acuerdo
+   * Get ideacuerdo
+   * @return ideacuerdo
   **/
   @ApiModelProperty(example = "null", value = "")
-  public String getAcuerdo() {
-    return acuerdo;
+  public String getIdeacuerdo() {
+    return ideacuerdo;
   }
 
-  public void setAcuerdo(String acuerdo) {
-    this.acuerdo = acuerdo;
+  public void setIdeacuerdo(String ideacuerdo) {
+    this.ideacuerdo = ideacuerdo;
   }
 
   public Cotizacion fecinivig(String fecinivig) {
@@ -58,12 +80,48 @@ public class Cotizacion {
     this.fecinivig = fecinivig;
   }
 
-  public Cotizacion ur(List<ObjectoAsegurado> ur) {
+  public Cotizacion ideproducto(String ideproducto) {
+    this.ideproducto = ideproducto;
+    return this;
+  }
+
+   /**
+   * Get ideproducto
+   * @return ideproducto
+  **/
+  @ApiModelProperty(example = "null", value = "")
+  public String getIdeproducto() {
+    return ideproducto;
+  }
+
+  public void setIdeproducto(String ideproducto) {
+    this.ideproducto = ideproducto;
+  }
+
+  public Cotizacion financimiento(Financimiento financimiento) {
+    this.financimiento = financimiento;
+    return this;
+  }
+
+   /**
+   * Get financimiento
+   * @return financimiento
+  **/
+  @ApiModelProperty(example = "null", value = "")
+  public Financimiento getFinancimiento() {
+    return financimiento;
+  }
+
+  public void setFinancimiento(Financimiento financimiento) {
+    this.financimiento = financimiento;
+  }
+
+  public Cotizacion ur(List<UnidadRiesgo> ur) {
     this.ur = ur;
     return this;
   }
 
-  public Cotizacion addUrItem(ObjectoAsegurado urItem) {
+  public Cotizacion addUrItem(UnidadRiesgo urItem) {
     this.ur.add(urItem);
     return this;
   }
@@ -73,12 +131,48 @@ public class Cotizacion {
    * @return ur
   **/
   @ApiModelProperty(example = "null", value = "")
-  public List<ObjectoAsegurado> getUr() {
+  public List<UnidadRiesgo> getUr() {
     return ur;
   }
 
-  public void setUr(List<ObjectoAsegurado> ur) {
+  public void setUr(List<UnidadRiesgo> ur) {
     this.ur = ur;
+  }
+
+  public Cotizacion participantes(Participante participantes) {
+    this.participantes = participantes;
+    return this;
+  }
+
+   /**
+   * Get participantes
+   * @return participantes
+  **/
+  @ApiModelProperty(example = "null", value = "")
+  public Participante getParticipantes() {
+    return participantes;
+  }
+
+  public void setParticipantes(Participante participantes) {
+    this.participantes = participantes;
+  }
+
+  public Cotizacion ordenentrada(OrdenEntrega ordenentrada) {
+    this.ordenentrada = ordenentrada;
+    return this;
+  }
+
+   /**
+   * Get ordenentrada
+   * @return ordenentrada
+  **/
+  @ApiModelProperty(example = "null", value = "")
+  public OrdenEntrega getOrdenentrada() {
+    return ordenentrada;
+  }
+
+  public void setOrdenentrada(OrdenEntrega ordenentrada) {
+    this.ordenentrada = ordenentrada;
   }
 
 
@@ -91,14 +185,18 @@ public class Cotizacion {
       return false;
     }
     Cotizacion cotizacion = (Cotizacion) o;
-    return Objects.equals(this.acuerdo, cotizacion.acuerdo) &&
+    return Objects.equals(this.ideacuerdo, cotizacion.ideacuerdo) &&
         Objects.equals(this.fecinivig, cotizacion.fecinivig) &&
-        Objects.equals(this.ur, cotizacion.ur);
+        Objects.equals(this.ideproducto, cotizacion.ideproducto) &&
+        Objects.equals(this.financimiento, cotizacion.financimiento) &&
+        Objects.equals(this.ur, cotizacion.ur) &&
+        Objects.equals(this.participantes, cotizacion.participantes) &&
+        Objects.equals(this.ordenentrada, cotizacion.ordenentrada);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(acuerdo, fecinivig, ur);
+    return Objects.hash(ideacuerdo, fecinivig, ideproducto, financimiento, ur, participantes, ordenentrada);
   }
 
 
@@ -107,9 +205,13 @@ public class Cotizacion {
     StringBuilder sb = new StringBuilder();
     sb.append("class Cotizacion {\n");
     
-    sb.append("    acuerdo: ").append(toIndentedString(acuerdo)).append("\n");
+    sb.append("    ideacuerdo: ").append(toIndentedString(ideacuerdo)).append("\n");
     sb.append("    fecinivig: ").append(toIndentedString(fecinivig)).append("\n");
+    sb.append("    ideproducto: ").append(toIndentedString(ideproducto)).append("\n");
+    sb.append("    financimiento: ").append(toIndentedString(financimiento)).append("\n");
     sb.append("    ur: ").append(toIndentedString(ur)).append("\n");
+    sb.append("    participantes: ").append(toIndentedString(participantes)).append("\n");
+    sb.append("    ordenentrada: ").append(toIndentedString(ordenentrada)).append("\n");
     sb.append("}");
     return sb.toString();
   }

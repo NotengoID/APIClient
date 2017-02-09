@@ -11,8 +11,11 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * ObjectoAsegurado
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-07T17:18:24.162Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-09T23:03:41.247Z")
 public class ObjectoAsegurado {
+  @JsonProperty("numero")
+  private String numero = null;
+
   @JsonProperty("tipo")
   private String tipo = null;
 
@@ -21,6 +24,24 @@ public class ObjectoAsegurado {
 
   @JsonProperty("detalle")
   private List<DatoParticular> detalle = new ArrayList<DatoParticular>();
+
+  public ObjectoAsegurado numero(String numero) {
+    this.numero = numero;
+    return this;
+  }
+
+   /**
+   * Get numero
+   * @return numero
+  **/
+  @ApiModelProperty(example = "null", value = "")
+  public String getNumero() {
+    return numero;
+  }
+
+  public void setNumero(String numero) {
+    this.numero = numero;
+  }
 
   public ObjectoAsegurado tipo(String tipo) {
     this.tipo = tipo;
@@ -91,14 +112,15 @@ public class ObjectoAsegurado {
       return false;
     }
     ObjectoAsegurado objectoAsegurado = (ObjectoAsegurado) o;
-    return Objects.equals(this.tipo, objectoAsegurado.tipo) &&
+    return Objects.equals(this.numero, objectoAsegurado.numero) &&
+        Objects.equals(this.tipo, objectoAsegurado.tipo) &&
         Objects.equals(this.ideoa, objectoAsegurado.ideoa) &&
         Objects.equals(this.detalle, objectoAsegurado.detalle);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(tipo, ideoa, detalle);
+    return Objects.hash(numero, tipo, ideoa, detalle);
   }
 
 
@@ -107,6 +129,7 @@ public class ObjectoAsegurado {
     StringBuilder sb = new StringBuilder();
     sb.append("class ObjectoAsegurado {\n");
     
+    sb.append("    numero: ").append(toIndentedString(numero)).append("\n");
     sb.append("    tipo: ").append(toIndentedString(tipo)).append("\n");
     sb.append("    ideoa: ").append(toIndentedString(ideoa)).append("\n");
     sb.append("    detalle: ").append(toIndentedString(detalle)).append("\n");

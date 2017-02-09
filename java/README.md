@@ -71,7 +71,7 @@ public class AcuerdoApiExample {
     public static void main(String[] args) {
         
         AcuerdoApi apiInstance = new AcuerdoApi();
-        String authorization = "authorization_example"; // String | Token para acceder a los servicios de Rimac.
+        String authorization = "Beared TestNoToken"; // String | Token de acceso.
         Cotizacion body = new Cotizacion(); // Cotizacion | datos de la cotización.
         try {
             List<PlanCotizado> result = apiInstance.acuerdoPost(authorization, body);
@@ -91,9 +91,12 @@ All URIs are relative to *https://rasveuswap01.azurewebsites.net/RimacChatbot/re
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*AcuerdoApi* | [**acuerdoPost**](docs/AcuerdoApi.md#acuerdoPost) | **POST** /acuerdo | Vehículos
-*AcuerdoApi* | [**acuerdoPut**](docs/AcuerdoApi.md#acuerdoPut) | **PUT** /acuerdo | Vehículos
-*VehculoApi* | [**vehiculoGet**](docs/VehculoApi.md#vehiculoGet) | **GET** /vehiculo | Vehículos
+*AcuerdoApi* | [**acuerdoPost**](docs/AcuerdoApi.md#acuerdoPost) | **POST** /acuerdo | Acuerdo
+*AcuerdoApi* | [**acuerdoPut**](docs/AcuerdoApi.md#acuerdoPut) | **PUT** /acuerdo | Acuerdo
+*MedioPagoApi* | [**terceroIdeterceroMediopagoGet**](docs/MedioPagoApi.md#terceroIdeterceroMediopagoGet) | **GET** /tercero/{idetercero}/mediopago | 
+*TerceroApi* | [**terceroGet**](docs/TerceroApi.md#terceroGet) | **GET** /tercero | Tercero
+*TerceroApi* | [**terceroIdeterceroMediopagoGet**](docs/TerceroApi.md#terceroIdeterceroMediopagoGet) | **GET** /tercero/{idetercero}/mediopago | 
+*VehculoApi* | [**vehiculoGet**](docs/VehculoApi.md#vehiculoGet) | **GET** /vehiculo | Veh&amp;iacute;culo
 
 
 ## Documentation for Models
@@ -101,8 +104,15 @@ Class | Method | HTTP request | Description
  - [Cotizacion](docs/Cotizacion.md)
  - [DatoParticular](docs/DatoParticular.md)
  - [Error](docs/Error.md)
+ - [Financimiento](docs/Financimiento.md)
+ - [FormaCobro](docs/FormaCobro.md)
+ - [MedioPago](docs/MedioPago.md)
  - [ObjectoAsegurado](docs/ObjectoAsegurado.md)
+ - [OrdenEntrega](docs/OrdenEntrega.md)
+ - [Participante](docs/Participante.md)
  - [PlanCotizado](docs/PlanCotizado.md)
+ - [Tercero](docs/Tercero.md)
+ - [UnidadRiesgo](docs/UnidadRiesgo.md)
  - [Vehiculo](docs/Vehiculo.md)
  - [VehiculoVEHICULOSUNARP](docs/VehiculoVEHICULOSUNARP.md)
 
