@@ -122,7 +122,7 @@ paths:
     get:
       tags:
       - "Vehículo"
-      summary: "Vehículo"
+      summary: "Veh&iacute;culo"
       description: "Busca un vehículo a través de una placa.\n"
       parameters:
       - name: "Authorization"
