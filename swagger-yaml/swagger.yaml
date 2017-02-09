@@ -264,6 +264,13 @@ definitions:
         type: "string"
       stster:
         type: "string"
+  MedioPago:
+    type: "object"
+    properties:
+      idetercero:
+        type: "string"
+      numero:
+        type: "string"
   Error:
     type: "object"
     properties:
