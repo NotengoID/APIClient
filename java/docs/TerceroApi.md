@@ -19,8 +19,8 @@ Busca un tercero a través de un tipo y número de documento de identidad.
 ### Example
 ```java
 // Import classes:
-//import io.swagger.client.ApiException;
-//import io.swagger.client.api.TerceroApi;
+//import com.rimac.ApiException;
+//import com.rimac.api.TerceroApi;
 
 
 TerceroApi apiInstance = new TerceroApi();
@@ -66,8 +66,8 @@ Busca los medios de pago de un tercero.
 ### Example
 ```java
 // Import classes:
-//import io.swagger.client.ApiException;
-//import io.swagger.client.api.TerceroApi;
+//import com.rimac.ApiException;
+//import com.rimac.api.TerceroApi;
 
 
 TerceroApi apiInstance = new TerceroApi();

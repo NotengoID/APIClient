@@ -18,8 +18,8 @@ Busca un vehículo a través de una placa.
 ### Example
 ```java
 // Import classes:
-//import io.swagger.client.ApiException;
-//import io.swagger.client.api.VehculoApi;
+//import com.rimac.ApiException;
+//import com.rimac.api.VehculoApi;
 
 
 VehculoApi apiInstance = new VehculoApi();
