@@ -29,10 +29,10 @@ public class TerceroApiTest {
      */
     @Test
     public void terceroGetTest() throws ApiException {
-        String nrodoc = null;
-        String tipodoc = null;
-        // Tercero response = api.terceroGet(nrodoc, tipodoc);
-
+        String nrodoc = "44468881";
+        String tipodoc = "2";
+        Tercero response = api.terceroGet(nrodoc, tipodoc);
+        System.out.println(response.getIdetercero());
         // TODO: test validations
     }
     
