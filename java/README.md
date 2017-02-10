@@ -58,10 +58,10 @@ Please follow the [installation](#installation) instruction and execute the foll
 
 ```java
 
-import com.rimac.api.*;
-import com.rimac.api.auth.*;
+import com.rimac.api.client.*;
+import com.rimac.api.client.auth.*;
 import com.rimac.api.client.bean.*;
-import com.rimac.api.client.AcuerdoApi;
+import com.rimac.api.client.api.AcuerdoApi;
 
 import java.io.File;
 import java.util.*;

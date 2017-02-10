@@ -19,8 +19,8 @@ Creación de un acuerdo (cotización, pólizas)
 ### Example
 ```java
 // Import classes:
-//import com.rimac.api.ApiException;
-//import com.rimac.api.client.AcuerdoApi;
+//import com.rimac.api.client.ApiException;
+//import com.rimac.api.client.api.AcuerdoApi;
 
 
 AcuerdoApi apiInstance = new AcuerdoApi();
@@ -66,8 +66,8 @@ Actualización de un acuerdo
 ### Example
 ```java
 // Import classes:
-//import com.rimac.api.ApiException;
-//import com.rimac.api.client.AcuerdoApi;
+//import com.rimac.api.client.ApiException;
+//import com.rimac.api.client.api.AcuerdoApi;
 
 
 AcuerdoApi apiInstance = new AcuerdoApi();

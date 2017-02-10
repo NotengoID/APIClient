@@ -18,8 +18,8 @@ Busca los medios de pago de un tercero.
 ### Example
 ```java
 // Import classes:
-//import com.rimac.api.ApiException;
-//import com.rimac.api.client.MedioPagoApi;
+//import com.rimac.api.client.ApiException;
+//import com.rimac.api.client.api.MedioPagoApi;
 
 
 MedioPagoApi apiInstance = new MedioPagoApi();
