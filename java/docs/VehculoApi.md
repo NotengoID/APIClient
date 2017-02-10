@@ -18,8 +18,8 @@ Busca un vehículo a través de una placa.
 ### Example
 ```java
 // Import classes:
-//import com.rimac.ApiException;
-//import com.rimac.api.VehculoApi;
+//import com.rimac.api.ApiException;
+//import com.rimac.api.client.VehculoApi;
 
 
 VehculoApi apiInstance = new VehculoApi();
