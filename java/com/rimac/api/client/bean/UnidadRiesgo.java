@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * UnidadRiesgo
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-10T15:08:30.373Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-10T15:09:25.018Z")
 public class UnidadRiesgo {
   @JsonProperty("numero")
   private String numero = null;

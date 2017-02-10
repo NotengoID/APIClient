@@ -48,7 +48,7 @@ import com.rimac.api.auth.HttpBasicAuth;
 import com.rimac.api.auth.ApiKeyAuth;
 import com.rimac.api.auth.OAuth;
 
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-10T15:08:30.373Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-10T15:09:25.018Z")
 public class ApiClient {
   private Map<String, String> defaultHeaderMap = new HashMap<String, String>();
   private String basePath = "https://rasveuswap01.azurewebsites.net/RimacChatbot/rest";
