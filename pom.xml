@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>io.swagger</groupId>
-  <artifactId>swagger-java-client</artifactId>
+  <groupId>com.rimac.api</groupId>
+  <artifactId>rimac-client</artifactId>
   <packaging>jar</packaging>
-  <name>swagger-java-client</name>
-  <version>1.0.0</version>
+  <name>rimac-client</name>
+  <version>1.0</version>
   <scm>
     <connection>scm:git:git@github.com:swagger-api/swagger-mustache.git</connection>
     <developerConnection>scm:git:git@github.com:swagger-api/swagger-codegen.git</developerConnection>
@@ -122,7 +122,7 @@
     <dependency>
       <groupId>org.glassfish.jersey.core</groupId>
       <artifactId>jersey-client</artifactId>
-      <version>2.22.2</version>
+      <version>${jersey-version}</version>
     </dependency>
     <dependency>
       <groupId>org.glassfish.jersey.media</groupId>
@@ -173,7 +173,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.12</version>
+      <version>${junit-version}</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
