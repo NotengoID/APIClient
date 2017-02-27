@@ -368,6 +368,8 @@ definitions:
   Pago:
     type: "object"
     properties:
+      idefactura:
+        type: "string"
       monto:
         type: "string"
       codmoneda:
