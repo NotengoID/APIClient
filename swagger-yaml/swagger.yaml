@@ -69,6 +69,38 @@ paths:
           description: "Acuerdo actualizado"
         404:
           description: "Acuerdo no encontraro o inválido"
+  /pago:
+    post:
+      tags:
+      - "Acuerdo"
+      description: "Creación de un pago\n"
+      consumes:
+      - "application/json"
+      - "text/plain"
+      parameters:
+      - name: "Authorization"
+        in: "header"
+        description: "Token de acceso."
+        required: true
+        type: "string"
+        default: "Beared TestNoToken"
+      - in: "body"
+        name: "body"
+        description: "datos de la cotización."
+        required: true
+        schema:
+          $ref: "#/definitions/Cotizacion"
+      responses:
+        200:
+          description: "Acuerdo creado, devuelve los planes"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/PlanCotizado"
+        default:
+          description: "Error inesperado"
+          schema:
+            $ref: "#/definitions/Error"
   /tercero:
     get:
       tags:
