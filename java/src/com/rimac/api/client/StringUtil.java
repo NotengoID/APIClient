@@ -1,6 +1,6 @@
 package com.rimac.api.client;
 
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-27T19:32:15.132Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-27T19:37:12.977Z")
 public class StringUtil {
   /**
    * Check if the given array contains the given value (with case-insensitive comparison).

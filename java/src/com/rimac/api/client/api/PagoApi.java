@@ -7,8 +7,7 @@ import com.rimac.api.client.Pair;
 
 import javax.ws.rs.core.GenericType;
 
-import com.rimac.api.client.bean.Error;
-import com.rimac.api.client.bean.Vehiculo;
+import com.rimac.api.client.bean.Pago;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -16,14 +15,14 @@ import java.util.List;
 import java.util.Map;
 
 @javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-27T19:37:12.977Z")
-public class VehculoApi {
+public class PagoApi {
   private ApiClient apiClient;
 
-  public VehculoApi() {
+  public PagoApi() {
     this(Configuration.getDefaultApiClient());
   }
 
-  public VehculoApi(ApiClient apiClient) {
+  public PagoApi(ApiClient apiClient) {
     this.apiClient = apiClient;
   }
 
@@ -36,35 +35,33 @@ public class VehculoApi {
   }
 
   /**
-   * Veh&amp;iacute;culo
-   * Busca un vehículo a través de una placa. 
+   * 
+   * Creación de un pago 
    * @param authorization Token de acceso. (required)
-   * @param placa Placa del vehículo. (required)
-   * @return Vehiculo
+   * @param body datos del pago. (required)
    * @throws ApiException if fails to make API call
    */
-  public Vehiculo vehiculoGet(String authorization, String placa) throws ApiException {
-    Object localVarPostBody = null;
+  public void pagoPost(String authorization, Pago body) throws ApiException {
+    Object localVarPostBody = body;
     
     // verify the required parameter 'authorization' is set
     if (authorization == null) {
-      throw new ApiException(400, "Missing the required parameter 'authorization' when calling vehiculoGet");
+      throw new ApiException(400, "Missing the required parameter 'authorization' when calling pagoPost");
     }
     
-    // verify the required parameter 'placa' is set
-    if (placa == null) {
-      throw new ApiException(400, "Missing the required parameter 'placa' when calling vehiculoGet");
+    // verify the required parameter 'body' is set
+    if (body == null) {
+      throw new ApiException(400, "Missing the required parameter 'body' when calling pagoPost");
     }
     
     // create path and map variables
-    String localVarPath = "/vehiculo".replaceAll("\\{format\\}","json");
+    String localVarPath = "/pago".replaceAll("\\{format\\}","json");
 
     // query params
     List<Pair> localVarQueryParams = new ArrayList<Pair>();
     Map<String, String> localVarHeaderParams = new HashMap<String, String>();
     Map<String, Object> localVarFormParams = new HashMap<String, Object>();
 
-    localVarQueryParams.addAll(apiClient.parameterToPairs("", "placa", placa));
 
     if (authorization != null)
       localVarHeaderParams.put("Authorization", apiClient.parameterToString(authorization));
@@ -82,7 +79,7 @@ public class VehculoApi {
 
     String[] localVarAuthNames = new String[] {  };
 
-    GenericType<Vehiculo> localVarReturnType = new GenericType<Vehiculo>() {};
-    return apiClient.invokeAPI(localVarPath, "GET", localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, localVarReturnType);
-      }
+
+    apiClient.invokeAPI(localVarPath, "POST", localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, null);
+  }
 }
