@@ -368,14 +368,16 @@ definitions:
   Pago:
     type: "object"
     properties:
-      id:
-        type: "string"
       monto:
         type: "string"
       codmoneda:
         type: "string"
       token:
         type: "string"
+    example:
+      monto: "10000"
+      codmoneda: "DOL"
+      token: ""
   Error:
     type: "object"
     properties:
