@@ -72,11 +72,8 @@ paths:
   /pago:
     post:
       tags:
-      - "Acuerdo"
+      - "Pago"
       description: "Creación de un pago\n"
-      consumes:
-      - "application/json"
-      - "text/plain"
       parameters:
       - name: "Authorization"
         in: "header"
@@ -86,21 +83,13 @@ paths:
         default: "Beared TestNoToken"
       - in: "body"
         name: "body"
-        description: "datos de la cotización."
+        description: "datos del pago."
         required: true
         schema:
-          $ref: "#/definitions/Cotizacion"
+          $ref: "#/definitions/Pago"
       responses:
-        200:
-          description: "Acuerdo creado, devuelve los planes"
-          schema:
-            type: "array"
-            items:
-              $ref: "#/definitions/PlanCotizado"
-        default:
-          description: "Error inesperado"
-          schema:
-            $ref: "#/definitions/Error"
+        201:
+          description: "Pago creado"
   /tercero:
     get:
       tags:
