@@ -376,11 +376,14 @@ definitions:
         type: "string"
       token:
         type: "string"
+      fecha:
+        type: "string"
     example:
       idefactura: ""
       monto: "10000"
       codmoneda: "DOL"
       token: ""
+      fecha: "01/12/2017"
   Error:
     type: "object"
     properties:
