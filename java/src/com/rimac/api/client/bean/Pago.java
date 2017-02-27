@@ -9,8 +9,11 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * Pago
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-27T19:40:55.876Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-27T23:32:06.056Z")
 public class Pago {
+  @JsonProperty("idefactura")
+  private String idefactura = null;
+
   @JsonProperty("monto")
   private String monto = null;
 
@@ -19,6 +22,24 @@ public class Pago {
 
   @JsonProperty("token")
   private String token = null;
+
+  public Pago idefactura(String idefactura) {
+    this.idefactura = idefactura;
+    return this;
+  }
+
+   /**
+   * Get idefactura
+   * @return idefactura
+  **/
+  @ApiModelProperty(example = "null", value = "")
+  public String getIdefactura() {
+    return idefactura;
+  }
+
+  public void setIdefactura(String idefactura) {
+    this.idefactura = idefactura;
+  }
 
   public Pago monto(String monto) {
     this.monto = monto;
@@ -84,14 +105,15 @@ public class Pago {
       return false;
     }
     Pago pago = (Pago) o;
-    return Objects.equals(this.monto, pago.monto) &&
+    return Objects.equals(this.idefactura, pago.idefactura) &&
+        Objects.equals(this.monto, pago.monto) &&
         Objects.equals(this.codmoneda, pago.codmoneda) &&
         Objects.equals(this.token, pago.token);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(monto, codmoneda, token);
+    return Objects.hash(idefactura, monto, codmoneda, token);
   }
 
 
@@ -100,6 +122,7 @@ public class Pago {
     StringBuilder sb = new StringBuilder();
     sb.append("class Pago {\n");
     
+    sb.append("    idefactura: ").append(toIndentedString(idefactura)).append("\n");
     sb.append("    monto: ").append(toIndentedString(monto)).append("\n");
     sb.append("    codmoneda: ").append(toIndentedString(codmoneda)).append("\n");
     sb.append("    token: ").append(toIndentedString(token)).append("\n");
