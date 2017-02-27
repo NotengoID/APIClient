@@ -377,6 +377,7 @@ definitions:
       token:
         type: "string"
     example:
+      idefactura: ""
       monto: "10000"
       codmoneda: "DOL"
       token: ""
