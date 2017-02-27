@@ -7,7 +7,7 @@ import com.rimac.api.client.Pair;
 import java.util.Map;
 import java.util.List;
 
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-10T16:19:28.220Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-27T19:29:34.912Z")
 public class OAuth implements Authentication {
   private String accessToken;
 

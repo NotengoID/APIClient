@@ -109,6 +109,7 @@ Class | Method | HTTP request | Description
  - [MedioPago](docs/MedioPago.md)
  - [ObjectoAsegurado](docs/ObjectoAsegurado.md)
  - [OrdenEntrega](docs/OrdenEntrega.md)
+ - [Pago](docs/Pago.md)
  - [Participante](docs/Participante.md)
  - [PlanCotizado](docs/PlanCotizado.md)
  - [Tercero](docs/Tercero.md)
