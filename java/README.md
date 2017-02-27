@@ -93,6 +93,7 @@ Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *AcuerdoApi* | [**acuerdoPost**](docs/AcuerdoApi.md#acuerdoPost) | **POST** /acuerdo | Acuerdo
 *AcuerdoApi* | [**acuerdoPut**](docs/AcuerdoApi.md#acuerdoPut) | **PUT** /acuerdo | Acuerdo
+*AcuerdoApi* | [**pagoPost**](docs/AcuerdoApi.md#pagoPost) | **POST** /pago | 
 *MedioPagoApi* | [**terceroIdeterceroMediopagoGet**](docs/MedioPagoApi.md#terceroIdeterceroMediopagoGet) | **GET** /tercero/{idetercero}/mediopago | 
 *TerceroApi* | [**terceroGet**](docs/TerceroApi.md#terceroGet) | **GET** /tercero | Tercero
 *TerceroApi* | [**terceroIdeterceroMediopagoGet**](docs/TerceroApi.md#terceroIdeterceroMediopagoGet) | **GET** /tercero/{idetercero}/mediopago | 

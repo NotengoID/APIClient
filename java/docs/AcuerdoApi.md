@@ -6,6 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**acuerdoPost**](AcuerdoApi.md#acuerdoPost) | **POST** /acuerdo | Acuerdo
 [**acuerdoPut**](AcuerdoApi.md#acuerdoPut) | **PUT** /acuerdo | Acuerdo
+[**pagoPost**](AcuerdoApi.md#pagoPost) | **POST** /pago | 
 
 
 <a name="acuerdoPost"></a>
@@ -99,5 +100,52 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="pagoPost"></a>
+# **pagoPost**
+> List&lt;PlanCotizado&gt; pagoPost(authorization, body)
+
+
+
+Creación de un pago 
+
+### Example
+```java
+// Import classes:
+//import com.rimac.api.client.ApiException;
+//import com.rimac.api.client.api.AcuerdoApi;
+
+
+AcuerdoApi apiInstance = new AcuerdoApi();
+String authorization = "Beared TestNoToken"; // String | Token de acceso.
+Cotizacion body = new Cotizacion(); // Cotizacion | datos de la cotización.
+try {
+    List<PlanCotizado> result = apiInstance.pagoPost(authorization, body);
+    System.out.println(result);
+} catch (ApiException e) {
+    System.err.println("Exception when calling AcuerdoApi#pagoPost");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **authorization** | **String**| Token de acceso. | [default to Beared TestNoToken]
+ **body** | [**Cotizacion**](Cotizacion.md)| datos de la cotización. |
+
+### Return type
+
+[**List&lt;PlanCotizado&gt;**](PlanCotizado.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, text/plain
  - **Accept**: application/json
 

@@ -1,6 +1,6 @@
 package com.rimac.api.client;
 
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-27T19:29:34.912Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-27T19:32:15.132Z")
 public class Pair {
     private String name = "";
     private String value = "";

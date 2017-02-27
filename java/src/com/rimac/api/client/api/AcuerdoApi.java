@@ -16,7 +16,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-27T19:29:34.912Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-27T19:32:15.132Z")
 public class AcuerdoApi {
   private ApiClient apiClient;
 
@@ -133,4 +133,53 @@ public class AcuerdoApi {
 
     apiClient.invokeAPI(localVarPath, "PUT", localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, null);
   }
+  /**
+   * 
+   * Creación de un pago 
+   * @param authorization Token de acceso. (required)
+   * @param body datos de la cotización. (required)
+   * @return List<PlanCotizado>
+   * @throws ApiException if fails to make API call
+   */
+  public List<PlanCotizado> pagoPost(String authorization, Cotizacion body) throws ApiException {
+    Object localVarPostBody = body;
+    
+    // verify the required parameter 'authorization' is set
+    if (authorization == null) {
+      throw new ApiException(400, "Missing the required parameter 'authorization' when calling pagoPost");
+    }
+    
+    // verify the required parameter 'body' is set
+    if (body == null) {
+      throw new ApiException(400, "Missing the required parameter 'body' when calling pagoPost");
+    }
+    
+    // create path and map variables
+    String localVarPath = "/pago".replaceAll("\\{format\\}","json");
+
+    // query params
+    List<Pair> localVarQueryParams = new ArrayList<Pair>();
+    Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+    Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+
+    if (authorization != null)
+      localVarHeaderParams.put("Authorization", apiClient.parameterToString(authorization));
+
+    
+    final String[] localVarAccepts = {
+      "application/json"
+    };
+    final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
+
+    final String[] localVarContentTypes = {
+      "application/json", "text/plain"
+    };
+    final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
+    String[] localVarAuthNames = new String[] {  };
+
+    GenericType<List<PlanCotizado>> localVarReturnType = new GenericType<List<PlanCotizado>>() {};
+    return apiClient.invokeAPI(localVarPath, "POST", localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, localVarReturnType);
+      }
 }

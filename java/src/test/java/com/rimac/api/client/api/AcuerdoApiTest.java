@@ -53,4 +53,21 @@ public class AcuerdoApiTest {
         // TODO: test validations
     }
     
+    /**
+     * 
+     *
+     * Creación de un pago 
+     *
+     * @throws ApiException
+     *          if the Api call fails
+     */
+    @Test
+    public void pagoPostTest() throws ApiException {
+        String authorization = null;
+        Cotizacion body = null;
+        // List<PlanCotizado> response = api.pagoPost(authorization, body);
+
+        // TODO: test validations
+    }
+    
 }
