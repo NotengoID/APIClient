@@ -9,11 +9,8 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * Pago
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-27T19:37:12.977Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-27T19:40:55.876Z")
 public class Pago {
-  @JsonProperty("id")
-  private String id = null;
-
   @JsonProperty("monto")
   private String monto = null;
 
@@ -22,24 +19,6 @@ public class Pago {
 
   @JsonProperty("token")
   private String token = null;
-
-  public Pago id(String id) {
-    this.id = id;
-    return this;
-  }
-
-   /**
-   * Get id
-   * @return id
-  **/
-  @ApiModelProperty(example = "null", value = "")
-  public String getId() {
-    return id;
-  }
-
-  public void setId(String id) {
-    this.id = id;
-  }
 
   public Pago monto(String monto) {
     this.monto = monto;
@@ -105,15 +84,14 @@ public class Pago {
       return false;
     }
     Pago pago = (Pago) o;
-    return Objects.equals(this.id, pago.id) &&
-        Objects.equals(this.monto, pago.monto) &&
+    return Objects.equals(this.monto, pago.monto) &&
         Objects.equals(this.codmoneda, pago.codmoneda) &&
         Objects.equals(this.token, pago.token);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, monto, codmoneda, token);
+    return Objects.hash(monto, codmoneda, token);
   }
 
 
@@ -122,7 +100,6 @@ public class Pago {
     StringBuilder sb = new StringBuilder();
     sb.append("class Pago {\n");
     
-    sb.append("    id: ").append(toIndentedString(id)).append("\n");
     sb.append("    monto: ").append(toIndentedString(monto)).append("\n");
     sb.append("    codmoneda: ").append(toIndentedString(codmoneda)).append("\n");
     sb.append("    token: ").append(toIndentedString(token)).append("\n");
