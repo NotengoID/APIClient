@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **codmoneda** | **String** |  |  [optional]
 **token** | **String** |  |  [optional]
 **fecha** | **String** |  |  [optional]
+**email** | **String** |  |  [optional]
 
 
 

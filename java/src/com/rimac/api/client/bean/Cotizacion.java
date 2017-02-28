@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * Cotizacion
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-27T23:33:33.566Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-28T15:10:13.520Z")
 public class Cotizacion {
   @JsonProperty("ideacuerdo")
   private String ideacuerdo = null;

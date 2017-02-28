@@ -9,7 +9,7 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * Pago
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-27T23:33:33.566Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-28T15:10:13.520Z")
 public class Pago {
   @JsonProperty("idefactura")
   private String idefactura = null;
@@ -25,6 +25,9 @@ public class Pago {
 
   @JsonProperty("fecha")
   private String fecha = null;
+
+  @JsonProperty("email")
+  private String email = null;
 
   public Pago idefactura(String idefactura) {
     this.idefactura = idefactura;
@@ -116,6 +119,24 @@ public class Pago {
     this.fecha = fecha;
   }
 
+  public Pago email(String email) {
+    this.email = email;
+    return this;
+  }
+
+   /**
+   * Get email
+   * @return email
+  **/
+  @ApiModelProperty(example = "null", value = "")
+  public String getEmail() {
+    return email;
+  }
+
+  public void setEmail(String email) {
+    this.email = email;
+  }
+
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -130,12 +151,13 @@ public class Pago {
         Objects.equals(this.monto, pago.monto) &&
         Objects.equals(this.codmoneda, pago.codmoneda) &&
         Objects.equals(this.token, pago.token) &&
-        Objects.equals(this.fecha, pago.fecha);
+        Objects.equals(this.fecha, pago.fecha) &&
+        Objects.equals(this.email, pago.email);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(idefactura, monto, codmoneda, token, fecha);
+    return Objects.hash(idefactura, monto, codmoneda, token, fecha, email);
   }
 
 
@@ -149,6 +171,7 @@ public class Pago {
     sb.append("    codmoneda: ").append(toIndentedString(codmoneda)).append("\n");
     sb.append("    token: ").append(toIndentedString(token)).append("\n");
     sb.append("    fecha: ").append(toIndentedString(fecha)).append("\n");
+    sb.append("    email: ").append(toIndentedString(email)).append("\n");
     sb.append("}");
     return sb.toString();
   }
