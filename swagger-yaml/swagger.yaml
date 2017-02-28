@@ -378,12 +378,15 @@ definitions:
         type: "string"
       fecha:
         type: "string"
+      email:
+        type: "string"
     example:
-      idefactura: ""
+      idefactura: "99999999"
       monto: "10000"
       codmoneda: "DOL"
-      token: ""
+      token: "crd_test_kSbdVntf0Wwz4NIG"
       fecha: "01/12/2017"
+      email: "richard@piedpiper.com"
   Error:
     type: "object"
     properties:
