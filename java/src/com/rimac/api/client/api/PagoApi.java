@@ -14,7 +14,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-28T16:29:27.092Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-28T17:01:59.859Z")
 public class PagoApi {
   private ApiClient apiClient;
 
@@ -37,17 +37,11 @@ public class PagoApi {
   /**
    * 
    * Creación de un pago 
-   * @param authorization Token de acceso. (required)
    * @param body datos del pago. (required)
    * @throws ApiException if fails to make API call
    */
-  public void pagoPost(String authorization, Pago body) throws ApiException {
+  public void pagoPost(Pago body) throws ApiException {
     Object localVarPostBody = body;
-    
-    // verify the required parameter 'authorization' is set
-    if (authorization == null) {
-      throw new ApiException(400, "Missing the required parameter 'authorization' when calling pagoPost");
-    }
     
     // verify the required parameter 'body' is set
     if (body == null) {
@@ -63,9 +57,7 @@ public class PagoApi {
     Map<String, Object> localVarFormParams = new HashMap<String, Object>();
 
 
-    if (authorization != null)
-      localVarHeaderParams.put("Authorization", apiClient.parameterToString(authorization));
-
+    
     
     final String[] localVarAccepts = {
       "application/json"

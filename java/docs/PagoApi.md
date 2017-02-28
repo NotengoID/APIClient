@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 <a name="pagoPost"></a>
 # **pagoPost**
-> pagoPost(authorization, body)
+> pagoPost(body)
 
 
 
@@ -23,10 +23,9 @@ Creación de un pago
 
 
 PagoApi apiInstance = new PagoApi();
-String authorization = "Beared TestNoToken"; // String | Token de acceso.
 Pago body = new Pago(); // Pago | datos del pago.
 try {
-    apiInstance.pagoPost(authorization, body);
+    apiInstance.pagoPost(body);
 } catch (ApiException e) {
     System.err.println("Exception when calling PagoApi#pagoPost");
     e.printStackTrace();
@@ -37,7 +36,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **authorization** | **String**| Token de acceso. | [default to Beared TestNoToken]
  **body** | [**Pago**](Pago.md)| datos del pago. |
 
 ### Return type

@@ -27,9 +27,8 @@ public class PagoApiTest {
      */
     @Test
     public void pagoPostTest() throws ApiException {
-        String authorization = null;
         Pago body = null;
-        // api.pagoPost(authorization, body);
+        // api.pagoPost(body);
 
         // TODO: test validations
     }
