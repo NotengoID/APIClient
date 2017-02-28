@@ -75,12 +75,6 @@ paths:
       - "Pago"
       description: "Creación de un pago\n"
       parameters:
-      - name: "Authorization"
-        in: "header"
-        description: "Token de acceso."
-        required: true
-        type: "string"
-        default: "Beared TestNoToken"
       - in: "body"
         name: "body"
         description: "datos del pago."
