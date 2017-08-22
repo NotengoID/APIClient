@@ -13,6 +13,83 @@ consumes:
 produces:
 - "application/json"
 paths:
+  /tercero:
+    get:
+      tags:
+      - "Tercero"
+      summary: "Búsqueda de terceros"
+      description: "Busca un tercero a través de un tipo y número de documento de\
+        \ identidad.\n"
+      parameters:
+      - name: "tipodoc"
+        in: "query"
+        description: "Tipo de documento de identidad."
+        required: false
+        type: "string"
+        default: "2"
+      - name: "nrodoc"
+        in: "query"
+        description: "Número de documento de identidad."
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "Tercero encontrado"
+          schema:
+            $ref: "#/definitions/Tercero"
+        404:
+          description: "Tercero no encontrado"
+          schema:
+            $ref: "#/definitions/Error"
+  /tercero/{idetercero}/mediopago:
+    get:
+      tags:
+      - "Tercero"
+      - "Medio Pago"
+      summary: "Búsqueda de medios de pago de un tercero."
+      description: "Busca los medios de pago de un tercero.\n"
+      parameters:
+      - name: "idetercero"
+        in: "path"
+        description: "Identificador del tercero."
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "Medios de pago encontrados"
+          schema:
+            $ref: "#/definitions/MedioPago"
+        404:
+          description: "Medios de pago no encontrados"
+          schema:
+            $ref: "#/definitions/Error"
+  /vehiculo:
+    get:
+      tags:
+      - "Vehículo"
+      summary: "Vehículo"
+      description: "Busca un vehículo a través de una placa.\n"
+      parameters:
+      - name: "Authorization"
+        in: "header"
+        description: "Token de acceso."
+        required: true
+        type: "string"
+        default: "Beared TestNoToken"
+      - name: "placa"
+        in: "query"
+        description: "Placa del vehículo."
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "Vehículo encontrado"
+          schema:
+            $ref: "#/definitions/Vehiculo"
+        404:
+          description: "Vehículo no encontrado"
+          schema:
+            $ref: "#/definitions/Error"
   /acuerdo:
     post:
       tags:
@@ -84,82 +161,6 @@ paths:
       responses:
         201:
           description: "Pago creado"
-  /tercero:
-    get:
-      tags:
-      - "Tercero"
-      summary: "Tercero"
-      description: "Busca un tercero a través de un tipo y número de documento de\
-        \ identidad.\n"
-      parameters:
-      - name: "tipodoc"
-        in: "query"
-        description: "Tipo de documento de identidad."
-        required: false
-        type: "string"
-        default: "2"
-      - name: "nrodoc"
-        in: "query"
-        description: "Número de documento de identidad."
-        required: true
-        type: "string"
-      responses:
-        200:
-          description: "Tercero encontrado"
-          schema:
-            $ref: "#/definitions/Tercero"
-        404:
-          description: "Tercero no encontrado"
-          schema:
-            $ref: "#/definitions/Error"
-  /tercero/{idetercero}/mediopago:
-    get:
-      tags:
-      - "Tercero"
-      - "Medio Pago"
-      description: "Busca los medios de pago de un tercero.\n"
-      parameters:
-      - name: "idetercero"
-        in: "path"
-        description: "Identificador del tercero."
-        required: true
-        type: "string"
-      responses:
-        200:
-          description: "Tercero encontrado"
-          schema:
-            $ref: "#/definitions/MedioPago"
-        404:
-          description: "Tercero no encontrado"
-          schema:
-            $ref: "#/definitions/Error"
-  /vehiculo:
-    get:
-      tags:
-      - "Vehículo"
-      summary: "Veh&iacute;culo"
-      description: "Busca un vehículo a través de una placa.\n"
-      parameters:
-      - name: "Authorization"
-        in: "header"
-        description: "Token de acceso."
-        required: true
-        type: "string"
-        default: "Beared TestNoToken"
-      - name: "placa"
-        in: "query"
-        description: "Placa del vehículo."
-        required: true
-        type: "string"
-      responses:
-        200:
-          description: "Vehículo encontrado"
-          schema:
-            $ref: "#/definitions/Vehiculo"
-        404:
-          description: "Vehículo no encontrado"
-          schema:
-            $ref: "#/definitions/Error"
 definitions:
   Cotizacion:
     type: "object"
@@ -394,58 +395,58 @@ definitions:
       message: "No encontrado"
   Vehiculo_VEHICULO_SUNARP:
     properties:
-      tipoAltoRiesgo:
+      gpsRequerido:
+        type: "boolean"
+      anioFabricacion:
         type: "string"
-      descTipoRimac:
+      clase:
+        type: "string"
+      codClaseRimac:
         type: "string"
       codGrupoRimac:
         type: "string"
-      valorComercial:
-        type: "integer"
-      clase:
-        type: "string"
-      marca:
-        type: "string"
-      indPractimovil:
-        type: "string"
-      descModeloRimac:
-        type: "string"
-      placaVigente:
-        type: "string"
-      otraObservacion:
-        type: "string"
-      anioFabricacion:
-        type: "string"
       codMarcaRimac:
         type: "string"
-      nroSerie:
+      codModeloRimac:
         type: "string"
       descClaseRimac:
-        type: "string"
-      nroMotor:
-        type: "string"
-      codClaseRimac:
         type: "string"
       descGrupoRimac:
         type: "string"
       descMarcaRimac:
         type: "string"
-      indClasico:
-        type: "string"
-      modelo:
-        type: "string"
-      indChinoHindu:
-        type: "string"
-      gpsRequerido:
-        type: "boolean"
-      valorNuevo:
-        type: "integer"
-      codModeloRimac:
-        type: "string"
-      indPremier:
+      descModeloRimac:
         type: "string"
       ind4X4:
         type: "string"
+      indClasico:
+        type: "string"
+      indPractimovil:
+        type: "string"
+      indPremier:
+        type: "string"
+      marca:
+        type: "string"
+      modelo:
+        type: "string"
+      nroMotor:
+        type: "string"
+      nroSerie:
+        type: "string"
+      otraObservacion:
+        type: "string"
+      placaVigente:
+        type: "string"
+      valorComercial:
+        type: "integer"
+      valorNuevo:
+        type: "integer"
+      tipoAltoRiesgo:
+        type: "string"
       codTipoRimac:
+        type: "string"
+      descTipoRimac:
+        type: "string"
+      indChinoHindu:
         type: "string"
 x-azure-api-id: "RimacAPI"
