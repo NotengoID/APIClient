@@ -9,7 +9,7 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * Error
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-28T17:04:39.289Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-08-22T15:08:40.486Z")
 public class Error {
   @JsonProperty("code")
   private Integer code = null;
@@ -26,7 +26,7 @@ public class Error {
    * Get code
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public Integer getCode() {
     return code;
   }
@@ -44,7 +44,7 @@ public class Error {
    * Get message
    * @return message
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getMessage() {
     return message;
   }

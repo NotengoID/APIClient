@@ -9,7 +9,7 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * OrdenEntrega
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-28T17:04:39.289Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-08-22T15:08:40.486Z")
 public class OrdenEntrega {
   @JsonProperty("fecha")
   private String fecha = null;
@@ -38,7 +38,7 @@ public class OrdenEntrega {
    * Get fecha
    * @return fecha
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getFecha() {
     return fecha;
   }
@@ -56,7 +56,7 @@ public class OrdenEntrega {
    * Get hora
    * @return hora
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getHora() {
     return hora;
   }
@@ -74,7 +74,7 @@ public class OrdenEntrega {
    * Get dschora
    * @return dschora
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getDschora() {
     return dschora;
   }
@@ -92,7 +92,7 @@ public class OrdenEntrega {
    * Get dircontacto
    * @return dircontacto
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getDircontacto() {
     return dircontacto;
   }
@@ -110,7 +110,7 @@ public class OrdenEntrega {
    * Get dircontactocorreo
    * @return dircontactocorreo
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getDircontactocorreo() {
     return dircontactocorreo;
   }
@@ -128,7 +128,7 @@ public class OrdenEntrega {
    * Get dscdistrito
    * @return dscdistrito
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getDscdistrito() {
     return dscdistrito;
   }

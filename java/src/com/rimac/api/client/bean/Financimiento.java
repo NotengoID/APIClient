@@ -9,7 +9,7 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * Financimiento
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-28T17:04:39.289Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-08-22T15:08:40.486Z")
 public class Financimiento {
   @JsonProperty("ideplanfin")
   private String ideplanfin = null;
@@ -29,7 +29,7 @@ public class Financimiento {
    * Get ideplanfin
    * @return ideplanfin
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getIdeplanfin() {
     return ideplanfin;
   }
@@ -47,7 +47,7 @@ public class Financimiento {
    * Get idpvigencia
    * @return idpvigencia
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getIdpvigencia() {
     return idpvigencia;
   }
@@ -65,7 +65,7 @@ public class Financimiento {
    * Get nrocuotas
    * @return nrocuotas
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getNrocuotas() {
     return nrocuotas;
   }

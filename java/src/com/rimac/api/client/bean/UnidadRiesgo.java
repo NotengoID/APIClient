@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * UnidadRiesgo
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-28T17:04:39.289Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-08-22T15:08:40.486Z")
 public class UnidadRiesgo {
   @JsonProperty("numero")
   private String numero = null;
@@ -32,7 +32,7 @@ public class UnidadRiesgo {
    * Get numero
    * @return numero
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getNumero() {
     return numero;
   }
@@ -50,7 +50,7 @@ public class UnidadRiesgo {
    * Get ideplan
    * @return ideplan
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getIdeplan() {
     return ideplan;
   }
@@ -73,7 +73,7 @@ public class UnidadRiesgo {
    * Get oa
    * @return oa
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public List<ObjectoAsegurado> getOa() {
     return oa;
   }

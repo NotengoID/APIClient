@@ -9,7 +9,7 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * DatoParticular
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-28T17:04:39.289Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-08-22T15:08:40.486Z")
 public class DatoParticular {
   @JsonProperty("idevalor")
   private String idevalor = null;
@@ -26,7 +26,7 @@ public class DatoParticular {
    * Get idevalor
    * @return idevalor
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getIdevalor() {
     return idevalor;
   }
@@ -44,7 +44,7 @@ public class DatoParticular {
    * Get valor
    * @return valor
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getValor() {
     return valor;
   }

@@ -15,7 +15,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-28T17:04:39.289Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-08-22T15:08:40.486Z")
 public class VehculoApi {
   private ApiClient apiClient;
 
@@ -36,7 +36,7 @@ public class VehculoApi {
   }
 
   /**
-   * Veh&amp;iacute;culo
+   * Vehículo
    * Busca un vehículo a través de una placa. 
    * @param authorization Token de acceso. (required)
    * @param placa Placa del vehículo. (required)

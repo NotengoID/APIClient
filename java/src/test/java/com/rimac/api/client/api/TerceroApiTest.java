@@ -20,7 +20,7 @@ public class TerceroApiTest {
 
     
     /**
-     * Tercero
+     * Búsqueda de terceros
      *
      * Busca un tercero a través de un tipo y número de documento de identidad. 
      *
@@ -37,7 +37,7 @@ public class TerceroApiTest {
     }
     
     /**
-     * 
+     * Búsqueda de medios de pago de un tercero.
      *
      * Busca los medios de pago de un tercero. 
      *

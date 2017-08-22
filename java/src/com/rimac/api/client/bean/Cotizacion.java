@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * Cotizacion
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-28T17:04:39.289Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-08-22T15:08:40.486Z")
 public class Cotizacion {
   @JsonProperty("ideacuerdo")
   private String ideacuerdo = null;
@@ -47,7 +47,7 @@ public class Cotizacion {
    * Get ideacuerdo
    * @return ideacuerdo
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getIdeacuerdo() {
     return ideacuerdo;
   }
@@ -65,7 +65,7 @@ public class Cotizacion {
    * Get fecinivig
    * @return fecinivig
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getFecinivig() {
     return fecinivig;
   }
@@ -83,7 +83,7 @@ public class Cotizacion {
    * Get ideproducto
    * @return ideproducto
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getIdeproducto() {
     return ideproducto;
   }
@@ -101,7 +101,7 @@ public class Cotizacion {
    * Get financimiento
    * @return financimiento
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public Financimiento getFinancimiento() {
     return financimiento;
   }
@@ -124,7 +124,7 @@ public class Cotizacion {
    * Get ur
    * @return ur
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public List<UnidadRiesgo> getUr() {
     return ur;
   }
@@ -142,7 +142,7 @@ public class Cotizacion {
    * Get participantes
    * @return participantes
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public Participante getParticipantes() {
     return participantes;
   }
@@ -160,7 +160,7 @@ public class Cotizacion {
    * Get ordenentrada
    * @return ordenentrada
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public OrdenEntrega getOrdenentrada() {
     return ordenentrada;
   }

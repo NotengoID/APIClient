@@ -9,7 +9,7 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * FormaCobro
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-28T17:04:39.289Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-08-22T15:08:40.486Z")
 public class FormaCobro {
   @JsonProperty("ideformacobro")
   private String ideformacobro = null;
@@ -23,7 +23,7 @@ public class FormaCobro {
    * Get ideformacobro
    * @return ideformacobro
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getIdeformacobro() {
     return ideformacobro;
   }

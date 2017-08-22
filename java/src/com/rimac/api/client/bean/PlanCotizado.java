@@ -9,7 +9,7 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * PlanCotizado
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-28T17:04:39.289Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-08-22T15:08:40.486Z")
 public class PlanCotizado {
   @JsonProperty("primaneta")
   private String primaneta = null;
@@ -38,7 +38,7 @@ public class PlanCotizado {
    * Get primaneta
    * @return primaneta
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getPrimaneta() {
     return primaneta;
   }
@@ -56,7 +56,7 @@ public class PlanCotizado {
    * Get dscplan
    * @return dscplan
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getDscplan() {
     return dscplan;
   }
@@ -74,7 +74,7 @@ public class PlanCotizado {
    * Get ideplan
    * @return ideplan
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getIdeplan() {
     return ideplan;
   }
@@ -92,7 +92,7 @@ public class PlanCotizado {
    * Get primabruta
    * @return primabruta
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getPrimabruta() {
     return primabruta;
   }
@@ -110,7 +110,7 @@ public class PlanCotizado {
    * Get simbolomoneda
    * @return simbolomoneda
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getSimbolomoneda() {
     return simbolomoneda;
   }
@@ -128,7 +128,7 @@ public class PlanCotizado {
    * Get prima
    * @return prima
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getPrima() {
     return prima;
   }

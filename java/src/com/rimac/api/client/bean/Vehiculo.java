@@ -10,7 +10,7 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * Vehiculo
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-28T17:04:39.289Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-08-22T15:08:40.486Z")
 public class Vehiculo {
   @JsonProperty("res")
   private String res = null;
@@ -27,7 +27,7 @@ public class Vehiculo {
    * Resultado de la búsqueda.
    * @return res
   **/
-  @ApiModelProperty(example = "null", value = "Resultado de la búsqueda.")
+  @ApiModelProperty(value = "Resultado de la búsqueda.")
   public String getRes() {
     return res;
   }
@@ -45,7 +45,7 @@ public class Vehiculo {
    * Get VEHICULO_SUNARP
    * @return VEHICULO_SUNARP
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public VehiculoVEHICULOSUNARP getVEHICULOSUNARP() {
     return VEHICULO_SUNARP;
   }

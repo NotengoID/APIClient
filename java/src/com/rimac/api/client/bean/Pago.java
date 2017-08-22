@@ -9,7 +9,7 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * Pago
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-28T17:04:39.289Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-08-22T15:08:40.486Z")
 public class Pago {
   @JsonProperty("idefactura")
   private String idefactura = null;
@@ -38,7 +38,7 @@ public class Pago {
    * Get idefactura
    * @return idefactura
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getIdefactura() {
     return idefactura;
   }
@@ -56,7 +56,7 @@ public class Pago {
    * Get monto
    * @return monto
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getMonto() {
     return monto;
   }
@@ -74,7 +74,7 @@ public class Pago {
    * Get codmoneda
    * @return codmoneda
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getCodmoneda() {
     return codmoneda;
   }
@@ -92,7 +92,7 @@ public class Pago {
    * Get token
    * @return token
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getToken() {
     return token;
   }
@@ -110,7 +110,7 @@ public class Pago {
    * Get fecha
    * @return fecha
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getFecha() {
     return fecha;
   }
@@ -128,7 +128,7 @@ public class Pago {
    * Get email
    * @return email
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getEmail() {
     return email;
   }

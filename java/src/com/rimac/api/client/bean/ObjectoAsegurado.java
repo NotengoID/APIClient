@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * ObjectoAsegurado
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-28T17:04:39.289Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-08-22T15:08:40.486Z")
 public class ObjectoAsegurado {
   @JsonProperty("numero")
   private String numero = null;
@@ -35,7 +35,7 @@ public class ObjectoAsegurado {
    * Get numero
    * @return numero
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getNumero() {
     return numero;
   }
@@ -53,7 +53,7 @@ public class ObjectoAsegurado {
    * Get tipo
    * @return tipo
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getTipo() {
     return tipo;
   }
@@ -71,7 +71,7 @@ public class ObjectoAsegurado {
    * Get ideoa
    * @return ideoa
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getIdeoa() {
     return ideoa;
   }
@@ -94,7 +94,7 @@ public class ObjectoAsegurado {
    * Get detalle
    * @return detalle
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public List<DatoParticular> getDetalle() {
     return detalle;
   }

@@ -9,7 +9,7 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * MedioPago
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-28T17:04:39.289Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-08-22T15:08:40.486Z")
 public class MedioPago {
   @JsonProperty("idetercero")
   private String idetercero = null;
@@ -32,7 +32,7 @@ public class MedioPago {
    * Get idetercero
    * @return idetercero
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getIdetercero() {
     return idetercero;
   }
@@ -50,7 +50,7 @@ public class MedioPago {
    * Get idetarjeta
    * @return idetarjeta
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getIdetarjeta() {
     return idetarjeta;
   }
@@ -68,7 +68,7 @@ public class MedioPago {
    * Get numero
    * @return numero
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getNumero() {
     return numero;
   }
@@ -86,7 +86,7 @@ public class MedioPago {
    * Get operador
    * @return operador
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getOperador() {
     return operador;
   }

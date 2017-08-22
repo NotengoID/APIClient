@@ -9,7 +9,7 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * Tercero
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-28T17:04:39.289Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-08-22T15:08:40.486Z")
 public class Tercero {
   @JsonProperty("codexterno")
   private String codexterno = null;
@@ -65,7 +65,7 @@ public class Tercero {
    * Get codexterno
    * @return codexterno
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getCodexterno() {
     return codexterno;
   }
@@ -83,7 +83,7 @@ public class Tercero {
    * Get correo
    * @return correo
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getCorreo() {
     return correo;
   }
@@ -101,7 +101,7 @@ public class Tercero {
    * Get direccion
    * @return direccion
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getDireccion() {
     return direccion;
   }
@@ -119,7 +119,7 @@ public class Tercero {
    * Get dscidpgenero
    * @return dscidpgenero
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getDscidpgenero() {
     return dscidpgenero;
   }
@@ -137,7 +137,7 @@ public class Tercero {
    * Get edad
    * @return edad
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getEdad() {
     return edad;
   }
@@ -155,7 +155,7 @@ public class Tercero {
    * Get estadocivil
    * @return estadocivil
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getEstadocivil() {
     return estadocivil;
   }
@@ -173,7 +173,7 @@ public class Tercero {
    * Get fecnacimiento
    * @return fecnacimiento
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getFecnacimiento() {
     return fecnacimiento;
   }
@@ -191,7 +191,7 @@ public class Tercero {
    * Get idetercero
    * @return idetercero
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getIdetercero() {
     return idetercero;
   }
@@ -209,7 +209,7 @@ public class Tercero {
    * Get idpgenero
    * @return idpgenero
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getIdpgenero() {
     return idpgenero;
   }
@@ -227,7 +227,7 @@ public class Tercero {
    * Get idptipodocumento
    * @return idptipodocumento
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getIdptipodocumento() {
     return idptipodocumento;
   }
@@ -245,7 +245,7 @@ public class Tercero {
    * Get idptipotercero
    * @return idptipotercero
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getIdptipotercero() {
     return idptipotercero;
   }
@@ -263,7 +263,7 @@ public class Tercero {
    * Get indexrow
    * @return indexrow
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getIndexrow() {
     return indexrow;
   }
@@ -281,7 +281,7 @@ public class Tercero {
    * Get nombre
    * @return nombre
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getNombre() {
     return nombre;
   }
@@ -299,7 +299,7 @@ public class Tercero {
    * Get numerodoc
    * @return numerodoc
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getNumerodoc() {
     return numerodoc;
   }
@@ -317,7 +317,7 @@ public class Tercero {
    * Get stster
    * @return stster
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getStster() {
     return stster;
   }

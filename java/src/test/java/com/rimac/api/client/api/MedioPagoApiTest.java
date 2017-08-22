@@ -19,7 +19,7 @@ public class MedioPagoApiTest {
 
     
     /**
-     * 
+     * Búsqueda de medios de pago de un tercero.
      *
      * Busca los medios de pago de un tercero. 
      *

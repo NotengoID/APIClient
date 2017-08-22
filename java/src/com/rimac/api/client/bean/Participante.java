@@ -10,7 +10,7 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * Participante
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-02-28T17:04:39.289Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-08-22T15:08:40.486Z")
 public class Participante {
   @JsonProperty("iderol")
   private String iderol = null;
@@ -45,7 +45,7 @@ public class Participante {
    * Get iderol
    * @return iderol
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getIderol() {
     return iderol;
   }
@@ -63,7 +63,7 @@ public class Participante {
    * Get idetercero
    * @return idetercero
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getIdetercero() {
     return idetercero;
   }
@@ -81,7 +81,7 @@ public class Participante {
    * Get prc
    * @return prc
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getPrc() {
     return prc;
   }
@@ -99,7 +99,7 @@ public class Participante {
    * Get tipo
    * @return tipo
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getTipo() {
     return tipo;
   }
@@ -117,7 +117,7 @@ public class Participante {
    * Get idptiprelter
    * @return idptiprelter
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getIdptiprelter() {
     return idptiprelter;
   }
@@ -135,7 +135,7 @@ public class Participante {
    * Get tlfcontacto
    * @return tlfcontacto
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getTlfcontacto() {
     return tlfcontacto;
   }
@@ -153,7 +153,7 @@ public class Participante {
    * Get emailcontacto
    * @return emailcontacto
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public String getEmailcontacto() {
     return emailcontacto;
   }
@@ -171,7 +171,7 @@ public class Participante {
    * Get formacobro
    * @return formacobro
   **/
-  @ApiModelProperty(example = "null", value = "")
+  @ApiModelProperty(value = "")
   public FormaCobro getFormacobro() {
     return formacobro;
   }

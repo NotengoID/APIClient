@@ -93,11 +93,11 @@ Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *AcuerdoApi* | [**acuerdoPost**](docs/AcuerdoApi.md#acuerdoPost) | **POST** /acuerdo | Acuerdo
 *AcuerdoApi* | [**acuerdoPut**](docs/AcuerdoApi.md#acuerdoPut) | **PUT** /acuerdo | Acuerdo
-*MedioPagoApi* | [**terceroIdeterceroMediopagoGet**](docs/MedioPagoApi.md#terceroIdeterceroMediopagoGet) | **GET** /tercero/{idetercero}/mediopago | 
+*MedioPagoApi* | [**terceroIdeterceroMediopagoGet**](docs/MedioPagoApi.md#terceroIdeterceroMediopagoGet) | **GET** /tercero/{idetercero}/mediopago | Búsqueda de medios de pago de un tercero.
 *PagoApi* | [**pagoPost**](docs/PagoApi.md#pagoPost) | **POST** /pago | 
-*TerceroApi* | [**terceroGet**](docs/TerceroApi.md#terceroGet) | **GET** /tercero | Tercero
-*TerceroApi* | [**terceroIdeterceroMediopagoGet**](docs/TerceroApi.md#terceroIdeterceroMediopagoGet) | **GET** /tercero/{idetercero}/mediopago | 
-*VehculoApi* | [**vehiculoGet**](docs/VehculoApi.md#vehiculoGet) | **GET** /vehiculo | Veh&amp;iacute;culo
+*TerceroApi* | [**terceroGet**](docs/TerceroApi.md#terceroGet) | **GET** /tercero | Búsqueda de terceros
+*TerceroApi* | [**terceroIdeterceroMediopagoGet**](docs/TerceroApi.md#terceroIdeterceroMediopagoGet) | **GET** /tercero/{idetercero}/mediopago | Búsqueda de medios de pago de un tercero.
+*VehculoApi* | [**vehiculoGet**](docs/VehculoApi.md#vehiculoGet) | **GET** /vehiculo | Vehículo
 
 
 ## Documentation for Models
