@@ -5,7 +5,7 @@ All URIs are relative to *https://rasveuswap01.azurewebsites.net/RimacChatbot/re
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**terceroGet**](TerceroApi.md#terceroGet) | **GET** /tercero | Búsqueda de terceros
-[**terceroIdeterceroMediopagoGet**](TerceroApi.md#terceroIdeterceroMediopagoGet) | **GET** /tercero/{idetercero}/mediopago | Búsqueda de medios de pago de un tercero.
+[**terceroIdeterceroMediopagoGet**](TerceroApi.md#terceroIdeterceroMediopagoGet) | **GET** /tercero/{idetercero}/mediopago | Búsqueda de medios de pago de un tercero
 
 
 <a name="terceroGet"></a>
@@ -59,7 +59,7 @@ No authorization required
 # **terceroIdeterceroMediopagoGet**
 > MedioPago terceroIdeterceroMediopagoGet(idetercero)
 
-Búsqueda de medios de pago de un tercero.
+Búsqueda de medios de pago de un tercero
 
 Busca los medios de pago de un tercero. 
 

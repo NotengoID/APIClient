@@ -15,7 +15,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-08-22T15:08:40.486Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-18T16:39:42.128Z")
 public class VehculoApi {
   private ApiClient apiClient;
 
@@ -36,7 +36,7 @@ public class VehculoApi {
   }
 
   /**
-   * Vehículo
+   * Veh&amp;iacute;culo
    * Busca un vehículo a través de una placa. 
    * @param authorization Token de acceso. (required)
    * @param placa Placa del vehículo. (required)
@@ -57,7 +57,7 @@ public class VehculoApi {
     }
     
     // create path and map variables
-    String localVarPath = "/vehiculo".replaceAll("\\{format\\}","json");
+    String localVarPath = "/vehiculo";
 
     // query params
     List<Pair> localVarQueryParams = new ArrayList<Pair>();

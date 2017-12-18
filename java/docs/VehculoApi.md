@@ -4,14 +4,14 @@ All URIs are relative to *https://rasveuswap01.azurewebsites.net/RimacChatbot/re
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**vehiculoGet**](VehculoApi.md#vehiculoGet) | **GET** /vehiculo | Vehículo
+[**vehiculoGet**](VehculoApi.md#vehiculoGet) | **GET** /vehiculo | Veh&amp;iacute;culo
 
 
 <a name="vehiculoGet"></a>
 # **vehiculoGet**
 > Vehiculo vehiculoGet(authorization, placa)
 
-Vehículo
+Veh&amp;iacute;culo
 
 Busca un vehículo a través de una placa. 
 

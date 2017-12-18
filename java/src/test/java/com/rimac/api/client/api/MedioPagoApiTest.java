@@ -4,6 +4,7 @@ import com.rimac.api.client.ApiException;
 import com.rimac.api.client.bean.Error;
 import com.rimac.api.client.bean.MedioPago;
 import org.junit.Test;
+import org.junit.Ignore;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -13,13 +14,14 @@ import java.util.Map;
 /**
  * API tests for MedioPagoApi
  */
+@Ignore
 public class MedioPagoApiTest {
 
     private final MedioPagoApi api = new MedioPagoApi();
 
     
     /**
-     * Búsqueda de medios de pago de un tercero.
+     * Búsqueda de medios de pago de un tercero
      *
      * Busca los medios de pago de un tercero. 
      *
@@ -29,7 +31,7 @@ public class MedioPagoApiTest {
     @Test
     public void terceroIdeterceroMediopagoGetTest() throws ApiException {
         String idetercero = null;
-        // MedioPago response = api.terceroIdeterceroMediopagoGet(idetercero);
+        MedioPago response = api.terceroIdeterceroMediopagoGet(idetercero);
 
         // TODO: test validations
     }

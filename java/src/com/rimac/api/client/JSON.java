@@ -1,14 +1,15 @@
 package com.rimac.api.client;
 
+import org.threeten.bp.*;
 import com.fasterxml.jackson.annotation.*;
 import com.fasterxml.jackson.databind.*;
-import com.fasterxml.jackson.datatype.joda.*;
+import com.fasterxml.jackson.datatype.threetenbp.ThreeTenModule;
 
 import java.text.DateFormat;
 
 import javax.ws.rs.ext.ContextResolver;
 
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-08-22T15:08:40.486Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-18T16:39:42.128Z")
 public class JSON implements ContextResolver<ObjectMapper> {
   private ObjectMapper mapper;
 
@@ -16,15 +17,21 @@ public class JSON implements ContextResolver<ObjectMapper> {
     mapper = new ObjectMapper();
     mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
     mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+    mapper.configure(DeserializationFeature.FAIL_ON_INVALID_SUBTYPE, false);
     mapper.disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS);
     mapper.enable(SerializationFeature.WRITE_ENUMS_USING_TO_STRING);
     mapper.enable(DeserializationFeature.READ_ENUMS_USING_TO_STRING);
     mapper.setDateFormat(new RFC3339DateFormat());
-    mapper.registerModule(new JodaModule());
+    ThreeTenModule module = new ThreeTenModule();
+    module.addDeserializer(Instant.class, CustomInstantDeserializer.INSTANT);
+    module.addDeserializer(OffsetDateTime.class, CustomInstantDeserializer.OFFSET_DATE_TIME);
+    module.addDeserializer(ZonedDateTime.class, CustomInstantDeserializer.ZONED_DATE_TIME);
+    mapper.registerModule(module);
   }
 
   /**
    * Set the date format for JSON (de)serialization with Date properties.
+   * @param dateFormat Date format
    */
   public void setDateFormat(DateFormat dateFormat) {
     mapper.setDateFormat(dateFormat);

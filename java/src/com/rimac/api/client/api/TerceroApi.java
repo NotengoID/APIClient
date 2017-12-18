@@ -16,7 +16,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-08-22T15:08:40.486Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-18T16:39:42.128Z")
 public class TerceroApi {
   private ApiClient apiClient;
 
@@ -53,7 +53,7 @@ public class TerceroApi {
     }
     
     // create path and map variables
-    String localVarPath = "/tercero".replaceAll("\\{format\\}","json");
+    String localVarPath = "/tercero";
 
     // query params
     List<Pair> localVarQueryParams = new ArrayList<Pair>();
@@ -81,7 +81,7 @@ public class TerceroApi {
     return apiClient.invokeAPI(localVarPath, "GET", localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, localVarReturnType);
       }
   /**
-   * Búsqueda de medios de pago de un tercero.
+   * Búsqueda de medios de pago de un tercero
    * Busca los medios de pago de un tercero. 
    * @param idetercero Identificador del tercero. (required)
    * @return MedioPago
@@ -96,7 +96,7 @@ public class TerceroApi {
     }
     
     // create path and map variables
-    String localVarPath = "/tercero/{idetercero}/mediopago".replaceAll("\\{format\\}","json")
+    String localVarPath = "/tercero/{idetercero}/mediopago"
       .replaceAll("\\{" + "idetercero" + "\\}", apiClient.escapeString(idetercero.toString()));
 
     // query params

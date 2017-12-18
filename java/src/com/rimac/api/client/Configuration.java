@@ -1,6 +1,6 @@
 package com.rimac.api.client;
 
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-08-22T15:08:40.486Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-18T16:39:42.128Z")
 public class Configuration {
     private static ApiClient defaultApiClient = new ApiClient();
 

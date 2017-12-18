@@ -4,6 +4,7 @@ import com.rimac.api.client.ApiException;
 import com.rimac.api.client.bean.Error;
 import com.rimac.api.client.bean.Vehiculo;
 import org.junit.Test;
+import org.junit.Ignore;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -13,13 +14,14 @@ import java.util.Map;
 /**
  * API tests for VehculoApi
  */
+@Ignore
 public class VehculoApiTest {
 
     private final VehculoApi api = new VehculoApi();
 
     
     /**
-     * Vehículo
+     * Veh&amp;iacute;culo
      *
      * Busca un vehículo a través de una placa. 
      *
@@ -30,7 +32,7 @@ public class VehculoApiTest {
     public void vehiculoGetTest() throws ApiException {
         String authorization = null;
         String placa = null;
-        // Vehiculo response = api.vehiculoGet(authorization, placa);
+        Vehiculo response = api.vehiculoGet(authorization, placa);
 
         // TODO: test validations
     }

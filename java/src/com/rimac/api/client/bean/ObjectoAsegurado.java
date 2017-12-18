@@ -3,6 +3,7 @@ package com.rimac.api.client.bean;
 import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonValue;
 import com.rimac.api.client.bean.DatoParticular;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -12,7 +13,7 @@ import java.util.List;
 /**
  * ObjectoAsegurado
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-08-22T15:08:40.486Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-18T16:39:42.128Z")
 public class ObjectoAsegurado {
   @JsonProperty("numero")
   private String numero = null;
@@ -24,7 +25,7 @@ public class ObjectoAsegurado {
   private String ideoa = null;
 
   @JsonProperty("detalle")
-  private List<DatoParticular> detalle = new ArrayList<DatoParticular>();
+  private List<DatoParticular> detalle = null;
 
   public ObjectoAsegurado numero(String numero) {
     this.numero = numero;
@@ -86,6 +87,9 @@ public class ObjectoAsegurado {
   }
 
   public ObjectoAsegurado addDetalleItem(DatoParticular detalleItem) {
+    if (this.detalle == null) {
+      this.detalle = new ArrayList<DatoParticular>();
+    }
     this.detalle.add(detalleItem);
     return this;
   }
@@ -148,6 +152,6 @@ public class ObjectoAsegurado {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

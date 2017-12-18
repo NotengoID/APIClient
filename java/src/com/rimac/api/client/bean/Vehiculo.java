@@ -3,6 +3,7 @@ package com.rimac.api.client.bean;
 import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonValue;
 import com.rimac.api.client.bean.VehiculoVEHICULOSUNARP;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -10,7 +11,7 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * Vehiculo
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-08-22T15:08:40.486Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-18T16:39:42.128Z")
 public class Vehiculo {
   @JsonProperty("res")
   private String res = null;
@@ -95,6 +96,6 @@ public class Vehiculo {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

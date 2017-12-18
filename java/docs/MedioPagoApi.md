@@ -4,14 +4,14 @@ All URIs are relative to *https://rasveuswap01.azurewebsites.net/RimacChatbot/re
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**terceroIdeterceroMediopagoGet**](MedioPagoApi.md#terceroIdeterceroMediopagoGet) | **GET** /tercero/{idetercero}/mediopago | Búsqueda de medios de pago de un tercero.
+[**terceroIdeterceroMediopagoGet**](MedioPagoApi.md#terceroIdeterceroMediopagoGet) | **GET** /tercero/{idetercero}/mediopago | Búsqueda de medios de pago de un tercero
 
 
 <a name="terceroIdeterceroMediopagoGet"></a>
 # **terceroIdeterceroMediopagoGet**
 > MedioPago terceroIdeterceroMediopagoGet(idetercero)
 
-Búsqueda de medios de pago de un tercero.
+Búsqueda de medios de pago de un tercero
 
 Busca los medios de pago de un tercero. 
 

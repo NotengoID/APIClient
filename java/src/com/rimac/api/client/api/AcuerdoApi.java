@@ -16,7 +16,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-08-22T15:08:40.486Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-18T16:39:42.128Z")
 public class AcuerdoApi {
   private ApiClient apiClient;
 
@@ -41,7 +41,7 @@ public class AcuerdoApi {
    * Creación de un acuerdo (cotización, pólizas) 
    * @param authorization Token de acceso. (required)
    * @param body datos de la cotización. (required)
-   * @return List<PlanCotizado>
+   * @return List&lt;PlanCotizado&gt;
    * @throws ApiException if fails to make API call
    */
   public List<PlanCotizado> acuerdoPost(String authorization, Cotizacion body) throws ApiException {
@@ -58,7 +58,7 @@ public class AcuerdoApi {
     }
     
     // create path and map variables
-    String localVarPath = "/acuerdo".replaceAll("\\{format\\}","json");
+    String localVarPath = "/acuerdo";
 
     // query params
     List<Pair> localVarQueryParams = new ArrayList<Pair>();
@@ -106,7 +106,7 @@ public class AcuerdoApi {
     }
     
     // create path and map variables
-    String localVarPath = "/acuerdo".replaceAll("\\{format\\}","json");
+    String localVarPath = "/acuerdo";
 
     // query params
     List<Pair> localVarQueryParams = new ArrayList<Pair>();

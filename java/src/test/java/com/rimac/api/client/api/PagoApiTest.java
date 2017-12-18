@@ -3,6 +3,7 @@ package com.rimac.api.client.api;
 import com.rimac.api.client.ApiException;
 import com.rimac.api.client.bean.Pago;
 import org.junit.Test;
+import org.junit.Ignore;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -12,6 +13,7 @@ import java.util.Map;
 /**
  * API tests for PagoApi
  */
+@Ignore
 public class PagoApiTest {
 
     private final PagoApi api = new PagoApi();
@@ -28,7 +30,7 @@ public class PagoApiTest {
     @Test
     public void pagoPostTest() throws ApiException {
         Pago body = null;
-        // api.pagoPost(body);
+        api.pagoPost(body);
 
         // TODO: test validations
     }

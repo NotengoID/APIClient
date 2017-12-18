@@ -5,6 +5,7 @@ import com.rimac.api.client.bean.Cotizacion;
 import com.rimac.api.client.bean.Error;
 import com.rimac.api.client.bean.PlanCotizado;
 import org.junit.Test;
+import org.junit.Ignore;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -14,6 +15,7 @@ import java.util.Map;
 /**
  * API tests for AcuerdoApi
  */
+@Ignore
 public class AcuerdoApiTest {
 
     private final AcuerdoApi api = new AcuerdoApi();
@@ -31,7 +33,7 @@ public class AcuerdoApiTest {
     public void acuerdoPostTest() throws ApiException {
         String authorization = null;
         Cotizacion body = null;
-        // List<PlanCotizado> response = api.acuerdoPost(authorization, body);
+        List<PlanCotizado> response = api.acuerdoPost(authorization, body);
 
         // TODO: test validations
     }
@@ -48,7 +50,7 @@ public class AcuerdoApiTest {
     public void acuerdoPutTest() throws ApiException {
         String ideacuerdo = null;
         Cotizacion body = null;
-        // api.acuerdoPut(ideacuerdo, body);
+        api.acuerdoPut(ideacuerdo, body);
 
         // TODO: test validations
     }

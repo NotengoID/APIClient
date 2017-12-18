@@ -3,6 +3,7 @@ package com.rimac.api.client.bean;
 import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonValue;
 import com.rimac.api.client.bean.Financimiento;
 import com.rimac.api.client.bean.OrdenEntrega;
 import com.rimac.api.client.bean.Participante;
@@ -15,7 +16,7 @@ import java.util.List;
 /**
  * Cotizacion
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-08-22T15:08:40.486Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2017-12-18T16:39:42.128Z")
 public class Cotizacion {
   @JsonProperty("ideacuerdo")
   private String ideacuerdo = null;
@@ -30,7 +31,7 @@ public class Cotizacion {
   private Financimiento financimiento = null;
 
   @JsonProperty("ur")
-  private List<UnidadRiesgo> ur = new ArrayList<UnidadRiesgo>();
+  private List<UnidadRiesgo> ur = null;
 
   @JsonProperty("participantes")
   private Participante participantes = null;
@@ -116,6 +117,9 @@ public class Cotizacion {
   }
 
   public Cotizacion addUrItem(UnidadRiesgo urItem) {
+    if (this.ur == null) {
+      this.ur = new ArrayList<UnidadRiesgo>();
+    }
     this.ur.add(urItem);
     return this;
   }
@@ -220,6 +224,6 @@ public class Cotizacion {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 
